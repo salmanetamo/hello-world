@@ -1,0 +1,352 @@
+/* Timeline in Organization page. Modified code from https://bootsnipp.com/snippets/a3BjR*/
+.timeline {
+  list-style: none;
+  padding: 20px;
+  position: relative;
+}
+.timeline:before {
+  top: 40px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 4px;
+  background-color: #f4f4ef;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline .timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline .timeline-item:before,
+.timeline .timeline-item:after {
+  content: "";
+  display: table;
+}
+.timeline .timeline-item:after {
+  clear: both;
+}
+.timeline .timeline-item .timeline-badge {
+  color: #fff;
+  width: 54px;
+  height: 54px;
+  line-height: 52px;
+  font-size: 22px;
+  text-align: center;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #7c7c7c;
+  border: 3px solid #ffffff;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline .timeline-item .timeline-badge i,
+.timeline .timeline-item .timeline-badge .fa{
+  top: 2px;
+  left: 0px;
+}
+.timeline .timeline-item .timeline-badge.one, .timeline .timeline-item .timeline-badge.four {
+  background-color: #a01d26;
+}
+.timeline .timeline-item .timeline-badge.two, .timeline .timeline-item .timeline-badge.five {
+  background-color: #20232a;
+}
+.timeline .timeline-item .timeline-badge.three, .timeline .timeline-item .timeline-badge.six {
+  background-color: #acbebe;
+}
+.timeline .timeline-item .panel-one:before, .timeline .timeline-item .panel-four:before {
+  border-left: 16px solid #a01d26;
+  border-right: 0 solid #a01d26;
+}
+.timeline .timeline-item .panel-two:before, .timeline .timeline-item .panel-five:before {
+  border-left: 16px solid #20232a;
+  border-right: 0 solid #20232a;
+}
+.timeline .timeline-item .panel-three:before, .timeline .timeline-item .panel-six:before {
+  border-left: 16px solid #acbebe;
+  border-right: 0 solid #acbebe;
+}
+.timeline .timeline-item .timeline-panel {
+  position: relative;
+  width: 46%;
+  float: left;
+  right: 16px;
+  border: 1px solid #a01d26;
+  background: #ffffff;
+  border-radius: 2px;
+  padding: 20px;
+  -webkit-box-shadow: 0 1px 6px #a01d26;
+  box-shadow: 0 1px 6px #a01d26;
+}
+.timeline .timeline-item .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -16px;
+  display: inline-block;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  content: " ";
+}
+.timeline .timeline-item .timeline-panel .timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline .timeline-item .timeline-panel .timeline-body > p,
+.timeline .timeline-item .timeline-panel .timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline .timeline-item .timeline-panel .timeline-body > p + p {
+  margin-top: 5px;
+}
+.timeline .timeline-item:nth-child(even) .timeline-panel {
+  float: right;
+  left: 16px;
+}
+.timeline .timeline-item:nth-child(even) .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+
+
+
+
+
+
+/*Navigation Bar*/
+nav{
+    background-color: white;
+}
+nav img{
+    width: 80px;
+}
+nav a:link, nav a:visited{
+    font-weight: bold;
+    color: #a01d26;
+}
+nav a.active{
+    color: #20232a;
+    background-color: #f4f4ef;
+}
+nav a:hover, nav a:active{
+    font-weight: bold;
+    color: #20232a;
+    background-color: #f4f4ef;
+}
+
+/*Homepage*/
+#home header{
+    background-image: url('../IMAGES/me.png');
+    height: 100vh;
+    color: white;
+    background-size: cover;
+}
+#home header h1, #home header span{
+    position: relative;
+    top: 50%;
+}
+#home #student{
+    width: 40vw;
+    height: 60vh;
+    background-image: url('../IMAGES/004-man-user.svg');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+    background-color: #f4f4ef;
+}
+#home #student:hover div.content{
+    background-color: #f4f4ef;
+    color: #20232a;
+    display: inline-block;
+    height: 100%;
+}
+#home #leave_comment{
+    width: 40vw;
+    height: 60vh;
+    background-image: url('../IMAGES/001-dialog.svg');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+    background-color: #20232a;
+}
+#home #leave_comment:hover div.content{
+    background-color: #20232a;
+    color: white;
+    display: inline-block;
+    height: 100%;
+}
+#home #project{
+    width: 40vw;
+    height: 60vh;
+    background-image: url('../IMAGES/002-list.svg');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+    background-color: #acbebe;
+}
+#home #project:hover div.content{
+    background-color: #acbebe;
+    color: white;
+    display: inline-block;
+    height: 100%;
+}
+#home #organization{
+    width: 40vw;
+    height: 60vh;
+    background-image: url('../IMAGES/003-briefcase.svg');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+    background-color: #a01d26;
+}
+#home #organization:hover div.content{
+    background-color: #a01d26;
+    color: white;
+    display: inline-block;
+    height: 100%;
+}
+#home div.content{
+    display: none;
+}
+#home div.content a{
+    position: relative;
+    left: 35%;
+}
+#home div.content a:link, #home div.content a:visited, .list-group-item a:visited, .list-group-item a:link{
+    text-decoration: none;
+    background-color: white;
+    color: #20232a;
+}
+#home div.content a:hover, #home div.content a:active, footer .list-group-item a:active, footer .list-group-item a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #a01d26;
+    font-weight: bold;
+}
+/*Student page*/
+#student section .col-12 p.titles{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #a01d26;
+}
+
+
+/*Organization page*/
+#organization section div#tabs a.nav-link{
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;*/
+}
+#organization section a.nav-link:link, #organization section a.nav-link:visited{
+    font-weight: bold;
+    color: white;
+    background-color: #20232a;
+    border-color: white;
+}
+#organization section a.nav-link.active{
+    color: #a01d26;
+    background-color: #f4f4ef;
+}
+#organization section a.nav-link:hover, #organization section a.nav-link:active{
+    font-weight: bold;
+    color: #a01d26;
+    background-color: #f4f4ef;
+}
+#organization section div.tab-content{
+    background-color: #f4f4ef;
+}
+
+
+/*Project page*/
+#project section div div.card{
+    width: 32%;
+}
+#project section div div.card img{
+    width: 50%;
+}
+
+/*Leave_Comment page*/
+
+#leave_comment #content .col-4{
+    display: inline-block;
+    height: 50vh;
+    background-color: #acbebe;
+}
+#leave_comment #content::before{
+    top: 85px;
+    bottom: 10px;
+    position: absolute;
+    content: " ";
+    width: 4px;
+    background-color: black;
+    left: 37.5%;
+    margin-left: -1.5px;
+}
+#leave_comment #content .col-7 .row .col-9 .comment_header::before {
+    position: absolute;
+    top: 16px;
+    left: -16px;
+    display: inline-block;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 0 solid #a01d26;
+    border-right: 16px solid #a01d26;
+    content: " ";
+}
+#leave_comment #content .col-7 .row .col-9{
+    border: 1px solid #a01d26;
+    box-shadow: 0 1px 6px #a01d26;
+    border-radius: 15px;
+}
+#leave_comment #content .col-7 .row .col-9 .comment_header{
+    background-color: #acbebe;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+#leave_comment #content .col-7 .row .col-2 div{
+    position: relative;
+    top: 26px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    border-radius: 15px;
+}
+#leave_comment #content .col-7 ul.pagination li.unclickable{
+    pointer-events: none;
+    cursor: default;
+}
+
+#leave_comment #content .col-7 ul.pagination li a:link, #leave_comment #content .col-7 ul.pagination li a:visited{
+    text-decoration: none;
+    color: black;
+}
+#leave_comment #content .col-7 ul.pagination li.active a{
+    background-color: #a01d26;
+    color: white;
+}
+#leave_comment #content .col-7 ul.pagination li a:hover{
+    background-color: #acbebe;
+}
+
+hr.section_separator{
+    width: 25%;
+    border: 2px solid #a01d26;
+    border-radius: .5rem;
+}
+
+/*Footer*/
+footer{
+    background-color: #20232a;
+}
+footer #copyright{
+    background-color: #acbebe;
+    color: #20232a;
+}

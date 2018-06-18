@@ -1,0 +1,32 @@
+#treant_organizational_tree div,#treant_organizational_tree dl,#treant_organizational_tree dt,#treant_organizational_tree dd,#treant_organizational_tree ul,#treant_organizational_tree ol,#treant_organizational_tree li,#treant_organizational_tree h1,#treant_organizational_tree h2,#treant_organizational_tree h3,#treant_organizational_tree h4,#treant_organizational_tree h5,#treant_organizational_tree h6,#treant_organizational_tree pre,#treant_organizational_tree form,#treant_organizational_tree fieldset,#treant_organizational_tree input,#treant_organizational_tree textarea,#treant_organizational_tree p,#treant_organizational_tree blockquote,#treant_organizational_tree th,#treant_organizational_tree td { margin:0; padding:0; }
+#treant_organizational_tree table { border-collapse:collapse; border-spacing:0; }
+#treant_organizational_tree fieldset,#treant_organizational_tree img { border:0; }
+#treant_organizational_tree address,#treant_organizational_tree caption,#treant_organizational_tree cite,#treant_organizational_tree code,#treant_organizational_tree dfn,#treant_organizational_tree em,#treant_organizational_tree strong,#treant_organizational_tree th,#treant_organizational_tree var { font-style:normal; font-weight:normal; }
+#treant_organizational_tree caption,#treant_organizational_tree th { text-align:left; }
+#treant_organizational_tree h1,#treant_organizational_tree h2,#treant_organizational_tree h3,#treant_organizational_tree h4,#treant_organizational_tree h5,#treant_organizational_tree h6 { font-size:100%; font-weight:normal; }
+#treant_organizational_tree q:before,#treant_organizational_tree q:after { content:''; }
+#treant_organizational_tree abbr,#treant_organizational_tree acronym { border:0; }
+
+
+/* optional Container STYLES */
+.chart { }
+.Treant > .node {  }
+.Treant > p { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: bold; font-size: 12px; }
+.node-name { font-weight: bold;}
+
+.nodes {
+    padding: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #20232a;
+    color: white;
+    border: 1px solid #20232a;
+    width: 150px;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.nodes img {
+    margin-right:  10px;
+}

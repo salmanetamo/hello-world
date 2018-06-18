@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Programming quizz 2</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../CSS/quizzes_style.css">
+		<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+		<script src="../Javascript/quizz2_script.js"></script>
+	</head>
+	<body onload="loadQuestions()"> 
+		<!-- Banner starts-->
+		<header>
+			<img src="../images/logo.png" width="325" alt="graspIt: Logo of the website">
+		</header>
+		<!-- Banner ends-->
+		<button onclick="moveToPreviousQuest(); return false;" class="previousButton">&laquo;</button>
+		<!-- Main content starts-->
+		<main id="quizz2Main" class="mainQuizz2AndQuizz3">
+			<h2>Quiz 2</h2>
+			<p><b>
+			This is a multiple choice quiz with six questions; each question has four possible answers. You can verify your answer for each question by clicking on CHECK .
+			</b></p>
+			<!--In this div, a button can be clicked to display the question-->
+			<div class="tabButtons">
+				<button class="buttons" onclick="openQuestion(event, 'question1')" id="defaultOpen">Question 1</button>
+				<button class="buttons" onclick="openQuestion(event, 'question2')">Question 2</button>
+				<button class="buttons" onclick="openQuestion(event, 'question3')">Question 3</button>
+				<button class="buttons" onclick="openQuestion(event, 'question4')">Question 4</button>
+				<button class="buttons" onclick="openQuestion(event, 'question5')">Question 5</button>
+				<button class="buttons" onclick="openQuestion(event, 'question6')">Question 6</button>
+			</div>
+			<div id="question1" class="formContent">
+				<form method="POST">
+					<label><!--The question will appear here--></label><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br><br><br>
+					<button onclick="giveFeedback('question1'); return false;" class="checkButton">Check</button><br>
+					
+				</form>
+				<div id="feedbackQuestion1" class="feedback"><!--Depending on answer checked, feedback will appear here--></div>
+			</div>
+			<div id="question2" class="formContent">
+				<form method="POST">
+					<label><!--The question will appear here--></label><br>
+					
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br><br><br>
+					<button onclick="giveFeedback('question2'); return false;" class="checkButton">Check</button><br>
+					
+				</form>
+				<div id="feedbackQuestion2" class="feedback"><!--Depending on answer checked, feedback will appear here--></div>
+			</div>
+			<div id="question3" class="formContent">
+				<form method="POST">
+					<label><!--The question will appear here--></label><br>
+					
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br><br><br>
+					<button onclick="giveFeedback('question3'); return false;" class="checkButton">Check</button><br>
+					
+				</form>
+				<div id="feedbackQuestion3" class="feedback"><!--Depending on answer checked, feedback will appear here--></div>
+			</div>
+			<div id="question4" class="formContent">
+				<form method="POST">
+					<label>Question</label><br>
+					
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br><br><br>
+					<button onclick="giveFeedback('question4'); return false;" class="checkButton">Check</button><br>
+					
+				</form>
+				<div id="feedbackQuestion4" class="feedback"><!--Depending on answer checked, feedback will appear here--></div>
+			</div>
+			<div id="question5" class="formContent">
+				<form method="POST">
+					<label><!--The question will appear here--></label><br>
+					
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br><br><br>
+					<button onclick="giveFeedback('question5'); return false;" class="checkButton">Check</button><br>
+					
+				</form>
+				<div id="feedbackQuestion5" class="feedback"><!--Depending on answer checked, feedback will appear here--></div>
+			</div>
+			<div id="question6" class="formContent">
+				<form method="POST">
+					
+					<label><!--The question will appear here--></label><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question"><span><!--One of the options will appear here--></span><br><br><br>
+					<button onclick="giveFeedback('question6'); return false;" class="checkButton">Check</button><br>
+					
+				</form>
+				<div id="feedbackQuestion6" class="feedback"><!--Depending on answer checked, feedback will appear here--></div>
+			</div>
+		</main>
+		<!-- Main content ends-->
+		<button onclick="moveToNextQuest(); return false;" class="nextButton">&raquo;</button>
+	</body>
+</html>

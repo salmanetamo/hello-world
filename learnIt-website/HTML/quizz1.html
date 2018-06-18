@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Programming quizz 1</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../CSS/quizzes_style.css">
+		<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+		<script src="../Javascript/quizz1_script.js"></script>
+	</head>
+	<body onload="loadQuestions()">
+		<!-- Banner starts-->
+		<header>
+			<img src="../images/logo.png" width="325" alt="graspIt: Logo of the website">
+		</header>
+		<!-- Banner ends-->
+		
+		<!-- Main content starts-->
+		<main id="quizz1Main">
+			<h2>Quiz 1</h2>
+			<p><b>
+			This is a multiple choice quiz with six questions; each question has four possible answers and you will be given 1 mark for a correct answer and 0 for an incorrect answer. You should attempt all of the questions before you can see your score.
+			</b></p>
+			<hr>
+			<form id="quiz1" method="POST" onsubmit="submitQuiz();return false;">
+				<div id="div1">
+					<label><!--The question will appear here--></label><br>
+					<input type="radio" name="question1"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question1"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question1"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question1"><span><!--One of the options will appear here--></span><br>
+					<label><!--The question will appear here--></label><br>
+					<input type="radio" name="question2"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question2"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question2"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question2"><span><!--One of the options will appear here--></span><br>
+					<label><!--The question will appear here--></label><br>
+					<input type="radio" name="question3"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question3"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question3"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question3"><span><!--One of the options will appear here--></span><br>
+				</div>
+
+				<div id="div2">
+					<label><!--The question will appear here--></label><br>
+					<input type="radio" name="question4"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question4"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question4"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question4"><span><!--One of the options will appear here--></span><br>
+					<label><!--The question will appear here--></label><br>
+					<input type="radio" name="question5"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question5"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question5"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question5"><span><!--One of the options will appear here--></span><br>
+					<label><!--The question will appear here--></label><br>
+					<input type="radio" name="question6"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question6"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question6"><span><!--One of the options will appear here--></span><br>
+					<input type="radio" name="question6"><span><!--One of the options will appear here--></span><br>
+				</div>
+				<hr>
+				<input type="submit" name="submit">
+			</form>
+			<div id="score"><!--The score will appear here--></div>
+		</main>
+		<!-- Main content ends-->
+	</body>
+
+</html>

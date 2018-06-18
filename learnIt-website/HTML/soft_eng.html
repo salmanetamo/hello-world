@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Soft.Eng</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+		<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	</head>
+
+	<body>
+	<!-- Banner starts-->
+		<header>
+			<!-- Red bar at the top of the page-->			
+			<div id="topBar">
+				<div id="allTopics">
+					<br><br>
+					<button onclick="displayTopics()">All Topics <img src="../images/arrowDown.svg" width="12" id="arrowDown" alt="Arrow facing down"> <img src="../images/arrowUp.svg" width="12" id="arrowUp" alt="Arrow facing up"> </button>
+				</div>
+				<!-- This is the dropdown that shows all the courses and available topics -->
+				<div id="allTopicsContent">
+					<div>
+						<h3><a href="programming.html">Programming</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Intro to Object-Oriented Programming</a></li>
+							<li><a href="#">Writing Java code</a></li>
+							<li><a href="#">Defining classes</a></li>
+							<li><a href="#">Adding methods to classes</a></li>
+							<li><a href="#">Object Interaction</a></li>
+							<li><a href="#">Writing methods-more types, control flow and arrays</a></li>
+							<li><a href="#">Algorithms and method calls</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3><a href="networking.html">Networking</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Explore the network</a></li>
+							<li><a href="#">Configure a Network Operating System</a></li>
+							<li><a href="#">Network Protocols and Communications</a></li>
+							<li><a href="#">Network Access</a></li>
+							<li><a href="#">Ethernet</a></li>
+							<li><a href="#">Network Layer</a></li>
+							<li><a href="#">IP Addressing</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3><a href="soft_eng.html">Software Engineering</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Introduction to Software Engineering</a></li>
+							<li><a href="#">Software Processes</a></li>
+							<li><a href="#">Agile Software Development</a></li>
+							<li><a href="#">Requirements Engineering</a></li>
+							<li><a href="#">System Modelling</a></li>
+							<li><a href="#">Architectural Design</a></li>
+							<li><a href="#">Design and Implementation Processes</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3><a href="maths.html">Maths For Computing</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Solving Equations</a></li>
+							<li><a href="#">Indices and Exponentials</a></li>
+							<li><a href="#">Logarithms</a></li>
+							<li><a href="#">Vectors</a></li>
+							<li><a href="#">Matrices</a></li>
+							<li><a href="#">Set Theory</a></li>
+							<li><a href="#">Functions</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="logo">
+					<img src="../images/logo.png" width="300" alt="graspIt: the logo">
+				</div>
+				<div id="searchBar">
+					<br><br>
+					<input type="text" name="searchBar" placeholder="Search">
+					<img src="../images/searchIcon.svg" alt="A search icon">
+				</div>
+
+			</div>
+	
+			<div id="actualHeader">
+				<h1><em>"LEARN AND PRACTICE UNTIL IT STICKS"</em></h1>
+			</div>
+			<!--Navigation bar starts here-->
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html"><img src="../images/homeIcon.svg" width="30" alt="Home icon"> &nbsp;&nbsp;Home</a>
+					</li>
+					<li>
+						<a href="programming.html">Programming</a>
+					</li>
+					<li>
+						<a href="networking.html">Networking</a>
+					</li>
+					<li>
+						<a href="maths.html">Maths For Computing</a>
+					</li>
+					<li>
+						<a href="soft_eng.html" id="active">Software Engineering</a>
+					</li>
+				</ul>
+			</nav>
+			<!--Navigation bar ends here-->
+			<hr>
+		</header>
+	<!-- Banner ends-->
+
+	<!-- Main content starts-->
+		<main id="moduleMain">
+			<h2>Fundamentals of Software Engineering</h2>
+			<hr>
+			<div id="logo_modulePage">
+				<img src="../images/logo_modulePage.png" width="800" alt="graspIt: Logo of the website">
+			</div>
+			<div class="tab">
+				<button class="tablinks" id="default" onclick="openTab(event, 'courseHome')">Course Home<img src="../images/leftArrow.svg" alt="Arrow pointing left" id="courseHomeArrow"></button><hr>
+				<button class="tablinks" onclick="openTab(event, 'topics')">Topics<img src="../images/leftArrow.svg" alt="Arrow pointing left" id="topicsArrow"></button><hr>
+				<button class="tablinks" onclick="openTab(event, 'quizzes')">Quizzes<img src="../images/leftArrow.svg" alt="Arrow pointing left" id="quizzesArrow"></button><hr>
+				<button class="tablinks" onclick="openTab(event, 'askQuestions')">Ask Questions<img src="../images/leftArrow.svg" alt="Arrow pointing left" id="askQuestionsArrow"></button><hr>
+			</div>
+			<div id="courseHome" class="tabcontent">
+				<img src="http://cp.inkrefuge.com/images/portfolios/portfolio/f7664060cc52bc6f3d620bcedc94a4b6/portfolio_group_software-engineering_original_1.jpg" width="510" height="296" alt="The globe, numbers, interconnectedness">
+				<span>Instructors: </span>
+				<ul>
+					<li>Iain Lambie, Module leader</li>
+					<li>Mehdi Oulmakki</li>
+					<li>Morag Ferguson</li>
+					<li>Maria Filippopoulou</li>
+					<li>Eddie Gray</li>
+				</ul>
+				<span>Number of topics: 12</span>
+				<h3>Course Description</h3>
+				<p>
+				This module will provide students with an introduction to the fundamental concepts, processes and practices in software engineering. This includes business analysis, requirements engineering, the software lifecycle and the software development process, software documentation, software quality and project risk as well as the challenges of dealing with legacy systems. It will also provide the student with an introduction to key professional practices in relation to the initial analysis and modelling of the development of commercial computer-based software systems.</p>
+			</div>
+			<div id="topics" class="tabcontent">
+				<p>The world of Software is getting bigger than ever before. The following lists some topics that will be explored in the FSE module and they will introduce to different concepts needed in order a software project successfully.</p>
+				<ol>
+					<li>Introduction to Software Engineering</li>
+					<li>Software Processes</li>
+					<li>Agile Software Development</li>
+					<li>Requirements Engineering</li>
+					<li>System Modelling</li>
+					<li>WArchitectural Design</li>
+					<li>Design and Implementation Processes</li>
+				</ol>
+			</div>
+			<div id="quizzes" class="tabcontent">
+				Quizzes are not available for this module yet.
+			</div>
+			<div id="askQuestions" class="tabcontent">
+				<p><b>Please fill the form below to contact the lecture and ask any questions you might have or raise any concerns around the module: </b></p>
+				<form method="post" action="../PHP/contactModule.php">
+					<label>Enter your name: </label>
+					<input type="text" name="name" required><br><br>
+
+					<label>Enter your email: </label>
+					<input type="text" name="email" required><br><br>
+
+					<label>Select the topic: </label>
+					<select>
+						<option>Introduction to Software Engineering</option>
+						<option>Software Processes</option>
+						<option>Agile Software Development</option>
+						<option>Requirements Engineering</option>
+						<option>System Modelling</option>
+						<option>WArchitectural Design</option>
+						<option>Design and Implementation Processes</option>
+					</select><br><br>
+
+					<label>Enter your question here: </label>
+					<input type="text" name="question" id="questionInput" required>
+					<input type="submit"> 
+				</form>
+			</div>
+		</main>
+	<!-- Main content ends-->
+
+	<!-- Footer starts-->
+		<footer>
+			<div>
+				<div>
+					<h3>About Us:</h3>
+					<p>
+					We are dedicated to make you GRASP all the different topics/concepts in the four courses of your first term. We do this by giving you the chance to practice your understanding of those concepts through interactive quizzes. You can take as many quizzes as you want until it sticks. 
+					</p>
+				</div>
+				<div>
+					<h3>Contacts:</h3>
+					<span>Email: <a href="#">info@graspIt.com</a></span><br>
+					<span>Subscribe here if your want to receive updates :</span><br>
+					<input type="text" name="subscribe">
+					<button>Subscribe</button>
+				</div>
+				<div>
+					<h3>Courses</h3>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="programming.html">Programming</a>
+						</li>
+						<li>
+							<a href="networking.html">Networking</a>
+						</li>
+						<li>
+							<a href="maths.html">Maths For Computing</a>
+						</li>
+						<li>
+							<a href="soft_eng.html">Software Engineering</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="copyright">
+				Copyright &copy; graspIt.com 2017. All rights reserved
+			</div>
+		</footer>
+	<!-- Footer ends-->
+	<script src="../Javascript/script.js"></script>
+	</body>
+	
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Programming</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+		<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	</head>
+
+	<body>
+	<!-- Banner starts-->
+		<header>
+			<!-- Red bar at the top of the page-->
+			<div id="topBar">
+				<div id="allTopics">
+					<br><br>
+					<button onclick="displayTopics()">All Topics <img src="../images/arrowDown.svg" width="12" id="arrowDown" alt="Arrow facing down"> <img src="../images/arrowUp.svg" width="12" id="arrowUp" alt="Arrow facing up"> </button>
+				</div>
+				<!-- This is the dropdown that shows all the courses and available topics -->
+				<div id="allTopicsContent">
+					<div>
+						<h3><a href="programming.html">Programming</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Intro to Object-Oriented Programming</a></li>
+							<li><a href="#">Writing Java code</a></li>
+							<li><a href="#">Defining classes</a></li>
+							<li><a href="#">Adding methods to classes</a></li>
+							<li><a href="#">Object Interaction</a></li>
+							<li><a href="#">Writing methods-more types, control flow and arrays</a></li>
+							<li><a href="#">Algorithms and method calls</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3><a href="networking.html">Networking</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Explore the network</a></li>
+							<li><a href="#">Configure a Network Operating System</a></li>
+							<li><a href="#">Network Protocols and Communications</a></li>
+							<li><a href="#">Network Access</a></li>
+							<li><a href="#">Ethernet</a></li>
+							<li><a href="#">Network Layer</a></li>
+							<li><a href="#">IP Addressing</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3><a href="soft_eng.html">Software Engineering</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Introduction to Software Engineering</a></li>
+							<li><a href="#">Software Processes</a></li>
+							<li><a href="#">Agile Software Development</a></li>
+							<li><a href="#">Requirements Engineering</a></li>
+							<li><a href="#">System Modelling</a></li>
+							<li><a href="#">Architectural Design</a></li>
+							<li><a href="#">Design and Implementation Processes</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3><a href="maths.html">Maths For Computing</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Solving Equations</a></li>
+							<li><a href="#">Indices and Exponentials</a></li>
+							<li><a href="#">Logarithms</a></li>
+							<li><a href="#">Vectors</a></li>
+							<li><a href="#">Matrices</a></li>
+							<li><a href="#">Set Theory</a></li>
+							<li><a href="#">Functions</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="logo">
+					<img src="../images/logo.png" width="300" alt="graspIt: the logo">
+				</div>
+				<div id="searchBar">
+					<br><br>
+					<input type="text" name="searchBar" placeholder="Search">
+					<img src="../images/searchIcon.svg" alt="A search icon">
+				</div>
+			</div>
+	
+			<div id="actualHeader">
+				<h1><em>"LEARN AND PRACTICE UNTIL IT STICKS"</em></h1>
+
+			</div>
+			<!--Navigation bar starts here-->
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html"><img src="../images/homeIcon.svg" width="30" alt="Home icon"> &nbsp;&nbsp;Home</a>
+					</li>
+					<li>
+						<a href="programming.html" id="active">Programming</a>
+					</li>
+					<li>
+						<a href="networking.html">Networking</a>
+					</li>
+					<li>
+						<a href="maths.html">Maths For Computing</a>
+					</li>
+					<li>
+						<a href="soft_eng.html">Software Engineering</a>
+					</li>
+				</ul>
+			</nav>
+			<!--Navigation bar ends here-->
+			<hr>
+		</header>
+	<!-- Banner ends-->
+
+	<!-- Main content starts-->
+		<main id="moduleMain">
+			<h2>Programming 1</h2>
+			<hr>
+			<div id="logo_modulePage">
+				<img src="../images/logo_modulePage.png" width="800" alt="graspIt: Logo of the website">
+			</div>
+			<div class="tab">
+				<button class="tablinks" id="default" onclick="openTab(event, 'courseHome')">Course Home<img src="../images/leftArrow.svg" alt="Arrow pointing left" id="courseHomeArrow"></button><hr>
+				<button class="tablinks" onclick="openTab(event, 'topics')">Topics<img src="../images/leftArrow.svg" alt="Arrow pointing left" id="topicsArrow"></button><hr>
+				<button class="tablinks" onclick="openTab(event, 'quizzes')">Quizzes<img src="../images/leftArrow.svg" alt="Arrow pointing left" id="quizzesArrow"></button><hr>
+				<button class="tablinks" onclick="openTab(event, 'askQuestions')">Ask Questions<img src="../images/leftArrow.svg" alt="Arrow pointing left" id="askQuestionsArrow"></button><hr>
+			</div>
+			<div id="courseHome" class="tabcontent">
+				<img src="https://images.pexels.com/photos/249203/pexels-photo-249203.jpeg?h=350&auto=compress&cs=tinysrgb" width="500" height="334" alt="A nice looking keyboard">
+				<span>Instructors: </span>
+				<ul>
+					<li>James Paterson, Module leader</li>
+					<li>Mehdi Oulmakki</li>
+					<li>Eddie Gray</li>
+				</ul>
+				<span>Number of topics: 12</span>
+				<h3>Course Description</h3>
+				<p>This course uses BlueJ, which is a simple and friendly integrated development environment, an IDE, to review some concepts that are core to the to Java programming language such as: data types, expressions, decisions, loops, and using the IDE debugging feature. It will then move on to discussing classes, objects, and data structures such as arrays and arraylists. So be ready to learn basic techniques such as managing loops and creating methods, debugging Java code, working with classes and objects, and storing and sorting arrays.</p>
+			</div>
+			<div id="topics" class="tabcontent" >
+				<br>
+				<p>The following is the full list of all the topics that are explored in the Programming 1 module. They aim at introducing you to the basics of programming general with a particular focus on object oriented programming in one one of the most widely used programming languages that is <b> Java</b> :</p><br>
+				<ol>
+					<li>Intro to Object-Oriented Programming</li>
+					<li>Writing Java code</li>
+					<li>Defining classes</li>
+					<li>Adding methods to classes</li>
+					<li>Object Interaction</li>
+					<li>Writing methods-more types, control flow and arrays</li>
+					<li>Algorithms and method calls</li>
+					<li>Development process and models</li>
+					<li>Developing, Testing and Documenting Classes </li>
+					<li>Library Classes, Refactoring and Inheritance </li>
+					<li>Catalogue of code patterns</li>
+					<li>Building Graphical User Interfaces</li>
+				</ol>
+			</div>
+			<div id="quizzes" class="tabcontent">
+				<div>
+					<h4>Quizz 1</h4>
+					<p>This quizz will test your understanding of the fundamental concepts of Object-Oriented Programming. These concepts are the basis on which the module is going to be carried on. So, make sure you have a good grasp of these concepts.</p>
+					<a href="quizz1.html" target="_blank">Take quizz</a>
+				</div>
+				<div>
+					<h4>Quizz 2</h4>
+					<p>This quizz starts diving into the Java language itself with a focus on variables. It will test your understanding of the different types of variables, how they are declared and stored in memory.</p>
+					<a href="quizz2.html" target="_blank">Take quizz</a>
+				</div>
+				<div>
+					<h4>Quizz 3</h4>
+					<p>This quizz will assess your understanding of the concept of a class. Classes in java are templates that allow you to create one or more objects of the same type. The quizz will cover some of the mechanisms needed to define a class.</p>
+					<a href="quizz3.html" target="_blank">Take quizz</a>
+				</div>
+			</div>
+			<div id="askQuestions" class="tabcontent">
+				<p><b>Please fill the form below to contact the lecture and ask any questions you might have or raise any concerns around the module: </b></p>
+				<form method="post" action="../PHP/contactModule.php">
+					<label>Enter your name: </label>
+					<input type="text" name="name" required><br><br>
+
+					<label>Enter your email: </label>
+					<input type="text" name="email" required><br><br>
+
+					<label>Select the topic: </label>
+					<select>
+						<option>Intro to Object-Oriented Programming</option>
+						<option>Writing Java code</option>
+						<option>Defining classes</option>
+						<option>Adding methods to classes</option>
+						<option>Object Interaction</option>
+						<option>Writing methods-more types, control flow and arrays</option>
+						<option>Algorithms and method calls</option>
+					</select><br><br>
+
+					<label>Enter your question here: </label>
+					<input type="text" name="question" id="questionInput" required>
+					<input type="submit"> 
+				</form>
+			</div>
+		</main>
+	<!-- Main content ends-->
+
+	<!-- Footer starts-->
+		<footer>
+			<div>
+				<div>
+					<h3>About Us:</h3>
+					<p>
+					We are dedicated to make you GRASP all the different topics/concepts in the four courses of your first term. We do this by giving you the chance to practice your understanding of those concepts through interactive quizzes. You can take as many quizzes as you want until it sticks. 
+					</p>
+				</div>
+				<div>
+					<h3>Contacts:</h3>
+					<span>Email: <a href="#">info@graspIt.com</a></span><br>
+					<span>Subscribe here if your want to receive updates :</span><br>
+					<input type="text" name="subscribe">
+					<button>Subscribe</button>
+				</div>
+				<div>
+					<h3>Courses</h3>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="programming.html">Programming</a>
+						</li>
+						<li>
+							<a href="networking.html">Networking</a>
+						</li>
+						<li>
+							<a href="maths.html">Maths For Computing</a>
+						</li>
+						<li>
+							<a href="soft_eng.html">Software Engineering</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="copyright">
+				Copyright &copy; graspIt.com 2017. All rights reserved
+			</div>
+		</footer>
+	<!-- Footer ends-->
+	<script src="../Javascript/script.js"></script>
+	</body>
+
+</html>

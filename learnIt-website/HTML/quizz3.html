@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Programming quizz 3</title>
+		<meta charset="UTF-8">
+		<script src="../Javascript/quizz3_script.js"></script>
+		<link rel="stylesheet" type="text/css" href="../CSS/quizzes_style.css">
+		<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	</head>
+	<body onload="loadQuestions()">
+		<!-- Banner starts-->
+		<header>
+			<img src="../images/logo.png" width="325"  alt="graspIt: Logo of the website"> 
+		</header>
+		<!-- Banner ends-->
+		<button onclick="moveToPreviousQuest(); return false;" class="previousButton">&laquo;</button>
+		<!-- Main content starts-->
+		<main class="mainQuizz2AndQuizz3" id="quizz3Main">
+			<h2>Quiz 3</h2>
+			<p><b>
+			This is quiz has different types of questions. Give your best and see how far you can go. After you have finished the quizz, you can go through the questions again to see your feedback.
+			</b></p>
+			<!--In this div, a button can be clicked to display the question-->
+			<div class="tabButtons">
+				<button class="buttons" onclick="openQuestion(event, 'question1')" id="defaultOpen">Question 1</button>
+				<button class="buttons" onclick="openQuestion(event, 'question2')">Question 2</button>
+				<button class="buttons" onclick="openQuestion(event, 'question3')">Question 3</button>
+				<button class="buttons" onclick="openQuestion(event, 'question4')">Question 4</button>
+				<button class="buttons" onclick="openQuestion(event, 'question5')">Question 5</button>
+				<button class="buttons" onclick="openQuestion(event, 'question6')">Question 6</button>
+			</div>
+			<!--In each question, the feedback images src attributes will be set by the Javascript once the user has answered the questions-->
+			<div id="question1" class="formContent">
+				<form method="POST">
+					<label>Question</label><br>
+					<input type="checkbox" name="question"><span>option</span><img class="feedbackImages"><br>
+					<input type="checkbox" name="question"><span>option</span><img class="feedbackImages"><br>
+					<input type="checkbox" name="question"><span>option</span><img class="feedbackImages"><br>
+					<input type="checkbox" name="question"><span>option</span><img class="feedbackImages"><br>					
+				</form>
+				<div class="feedback"><!--Depending on answer checked, feedback will appear here at the end of the quiz--></div>
+			</div>
+			<div id="question2" class="formContent">
+				<form method="POST">
+					<label>Question</label><br>
+					<span>First match</span>
+					<select>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>	
+					</select><img class="feedbackImages"><br>
+					<span>second match</span>
+					<select>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>	
+					</select><img class="feedbackImages"><br>
+					<span>third match</span>
+					<select>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>	
+					</select><img class="feedbackImages"><br>
+					<span>fourth match</span>
+					<select>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>
+						<option>option</option><br>	
+					</select><img class="feedbackImages"><br>
+				</form>
+				<div class="feedback"><!--Depending on answer checked, feedback will appear here at the end of the quiz--></div>
+			</div>
+			<div id="question3" class="formContent"> 
+				<form method="POST">
+					<label>Question</label><br>
+					<span>How many ...</span><input type="number" name="question"><img class="feedbackImages"><br>
+					<span>How many ...</span><input type="number" name="question"><img class="feedbackImages"><br>
+					<span>How many ...</span><input type="number" name="question"><img class="feedbackImages"><br>
+					<span>How many ...</span><input type="number" name="question"><img class="feedbackImages"><br>					
+				</form>
+				<div class="feedback"><!--Depending on answer checked, feedback will appear here at the end of the quiz--></div>
+			</div>
+			<div id="question4" class="formContent extra">
+				<form method="POST">
+					<label>Question</label><br>
+					<div id="draggableButtons">
+						<button draggable="true" ondragstart="dragAnswer(event)" id="firstQuestionButton" class="draggableButtons">Drag me</button><br>
+						<button draggable="true" ondragstart="dragAnswer(event)" id="secondQuestionButton" class="draggableButtons">Drag me</button><br>
+						<button draggable="true" ondragstart="dragAnswer(event)" id="thirdQuestionButton" class="draggableButtons">Drag me</button><br>
+						<button draggable="true" ondragstart="dragAnswer(event)" id="fourthQuestionButton" class="draggableButtons">Drag me</button><br>	
+					</div>		
+					<div id="placeHolders">			
+						<span ondrop="dropAnswer(event)" ondragover="allowDrop(event)" id="firstQuestion">Drop here</span><img class="feedbackImages"><br>
+						<span ondrop="dropAnswer(event)" ondragover="allowDrop(event)" id="secondQuestion">Drop here</span><img class="feedbackImages"><br>
+						<span ondrop="dropAnswer(event)" ondragover="allowDrop(event)" id="thirdQuestion">Drop here</span><img class="feedbackImages"><br>
+						<span ondrop="dropAnswer(event)" ondragover="allowDrop(event)" id="fourthQuestion">Drop here</span><img class="feedbackImages"><br>
+						<span ondrop="dropAnswer(event)" ondragover="allowDrop(event)" id="fifthQuestion">Drop here</span><img class="feedbackImages"><br>
+					</div>
+				</form>
+				<div class="feedback"><!--Depending on answer checked, feedback will appear here at the end of the quiz--></div>
+			</div>
+			<div id="question5" class="formContent">
+				<form method="POST">
+					<label>Complete the sentence</label><br>
+					<span>Some text</span><input type="text" name="question"><img class="feedbackImages"><span>Some text</span>
+					<input type="text" name="question"><img class="feedbackImages"><span>Some text</span>
+					<input type="text" name="question"><img class="feedbackImages"><span>Some text</span>
+					<input type="text" name="question"><img class="feedbackImages"><span>Some text</span><br>					
+				</form>
+				<div class="feedback"><!--Depending on answer checked, feedback will appear here at the end of the quiz--></div>
+			</div>
+			<div id="question6" class="formContent">
+				<form method="POST">
+					<label>Question</label><br>
+					<label class="radioContainer">
+						<input type="radio" name="question"><img class="radioImages" src="../images/wrong1.png"> <!-- They are made up of images --><br>
+					</label><img class="feedbackImages">
+					<label class="radioContainer">
+						<input type="radio" name="question"><img class="radioImages" src="../images/rightOpt.png"> <!-- They are made up of images --><br>
+					</label><img class="feedbackImages">
+					<label class="radioContainer">
+						<input type="radio" name="question"><img class="radioImages" src="../images/wrong2.png"> <!-- They are made up of images --><br>
+					</label><img class="feedbackImages">
+					<label class="radioContainer">
+						<input type="radio" name="question"><img class="radioImages" src="../images/wrong3.png"> <!-- They are made up of images --><br>
+					</label><img class="feedbackImages">
+				</form>
+				<button onclick="gradeAndFeedback(); return false;" id="submitButton">Finish quizz</button>
+				<div class="feedback"><!--Depending on answer checked, feedback will appear here at the end of the quiz--></div>
+			</div>
+		</main>
+		<!-- Main content ends-->
+		<button onclick="moveToNextQuest(); return false;" class="nextButton">&raquo;</button>
+	</body>
+</html>

@@ -1,0 +1,396 @@
+@charset "utf-8";
+/* CSS Document for the homepgae and the four module pages */
+
+/*Importing fonts from Google*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
+
+/*Setting default font for the body*/
+body{
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	position: absolute;
+}
+/*Header*/
+header{
+	position: relative;
+	top:0px;
+}
+header #topBar{
+	margin-top: 8px;
+	background-color: #cc0000;
+}
+header #topBar > div{
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+	height: 80px;
+}
+
+header #topBar #allTopics button{
+	color: white;
+	outline: none;
+	background-color: #cc0000;
+	border: 1px solid white;
+	cursor: pointer;
+	border-radius: 2px;
+}
+header #topBar #allTopicsContent{
+	background-color: rgba(255, 255, 255, 0.89);
+	width: 80%;
+	height: 300px;
+	top: 80px;
+	position: absolute;
+	left:175px;
+}
+header #topBar #allTopicsContent > div{
+	display: inline-block;
+	text-align: left;
+	width: 23%;
+	float: left;
+	margin-left: 1%;
+}
+header #topBar #searchBar{
+	float: right;
+}
+header #topBar #searchBar input{
+	background-color: #cc0000;
+	width: 200px;
+	height: 25px;
+	border-left: 2px solid white;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	border-right: 2px solid #cc0000;
+}
+
+header #topBar #searchBar img{
+	border:1px solid white;
+	height: 27px;
+	margin-bottom: -11px;
+	border-right: 2px solid white;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	border-left: 0px ;
+	margin-left: -10px;
+}
+
+header #actualHeader{
+	height: 450px;
+	width: 100%;
+	background: 0px -100px no-repeat url('https://www.fmjfee.com/img/home/learn/learn_1.jpg');
+	background-size: 100%;
+
+}
+header #actualHeader a:link, header #actualHeader a:visited{
+	display: inline-block;
+	margin-top: 100px;
+	text-align: center;
+	margin-left: 45%;
+	color: white;
+	background-color: #cc0000;
+	font-weight: bold;
+	padding: 12px 10px 12px 10px;
+}
+header #actualHeader a:active, header #actualHeader a:hover{
+	background-color: #b90404;
+}
+header nav ul li:first-child{
+	text-align: left;
+}
+header nav ul li{
+	list-style: none;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 19%;
+	text-align: center;
+}
+header nav ul li a:link, header nav ul li a:visited{
+	color: #cc0000;
+}
+header nav ul li a:hover,header nav ul li a:active{
+	color: black;
+}
+header nav ul li #active{
+	padding-bottom: 10px;
+	border-bottom: 3px solid #cc0000;
+}
+
+/*Main body of the homepage*/
+	/*Section courses*/
+#homeMain #courses{
+	text-align: center;
+}
+#homeMain #courses div{
+	border:1px solid black;
+	display: inline-block;
+	width: 23.8%;
+}
+#homeMain #courses div > div{
+	height: 220px;
+	width: 99.5%;
+	background-repeat: no-repeat;
+	background-size: 321px 210px ;
+	border:0;
+}
+#homeMain #courses div #programmingPicture{
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFhi1NeaPDXNc_-w2ptAqJnkaWo1vjGv9us9wZUPo7QbltnD79');
+}
+#homeMain #courses div #networkingPicture{
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3imadcx6LxbV37uLI6tnSPmlMQH_tm0vNtmYN71jT-T4Zlk9NZQ');
+}
+#homeMain #courses div #fsePicture{
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd65LmjCqUEtBHJz0cbL02NaDGhZSkSDA87F7RC52Okkmmths8');
+}
+#homeMain #courses div #mathsPicture{
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzd50PkMAM6Xvc1zCoQLOzsdF7abw_ugAGMkFH1Q8_jOgVEiPk');
+}
+#homeMain #courses hr{
+	width: 25%;
+	border: 1px solid #cc0000;
+}
+#homeMain #courses div > p{
+	text-align: justify;
+	padding: 0px 12px 0px 12px;
+}
+#homeMain #courses div > span{
+	font-weight: bold;
+}
+
+#homeMain #courses .startButtons:link, #homeMain #courses .startButtons:visited{
+	display: inline-block;
+	margin-bottom: 10px;
+	color: white;
+	background-color: #cc0000;
+	font-weight: bold;
+	padding: 5px 8px 5px 8px;
+}
+#homeMain #courses .startButtons:active, #homeMain #courses .startButtons:hover{
+	background-color: #b90404;
+}
+	/*Section testimonials*/
+#homeMain #testimonials h2{
+	text-align: center;
+}
+#homeMain #testimonials img{
+	width: 300px;
+	height: 300px;
+	background-size: cover;
+	border-radius: 50%;
+	border: 5px solid #cc0000;
+	display: inline-block;
+	float: left;
+	margin-left: 10%; 
+	margin-top: 20px;
+}
+#homeMain #testimonials div{
+	background-color: rgba(204, 0, 0, 0.06);
+	clear: both;
+	height: 350px;
+}
+#homeMain #testimonials p{
+	width: 50%;
+	float: right;
+	margin-right: 10%;
+}
+#homeMain #testimonials div blockquote > p:first-child{
+	font-size: 1.5em;
+}
+
+/*Footer*/
+footer {
+	background-color: #cc0000;
+	color: white;
+	clear: both;
+}
+footer div > div{
+	display: inline-block;
+	width: 32%;
+
+	float: left;
+	height: 250px;
+	margin-left: 1%;
+}
+footer span, footer input, footer p{
+	margin-left: 20%;
+}
+footer button{
+	color: #cc0000;
+	background-color: black;
+	border: 1px solid white;
+	font-weight: bold;
+}
+footer h3{
+	margin-top: 20px;
+	text-align: center;
+}
+footer a{
+	color: white;
+	font-weight: bold;
+}
+footer a:hover{
+	color: black;
+}
+footer ul{
+	margin-left: 25%;
+	list-style: none;
+}
+footer #copyright{
+	text-align: center;
+	background-color: black;
+	color: red;
+	clear: both;
+}
+/*Text*/
+h1{
+	margin: 0;
+	font-size: 3em;
+	font-weight: 700;
+	text-align: center;
+	color: white;
+	padding-top: 2em; 
+}
+
+h2{
+	margin: 0 0 0.5em 0;
+	font-size: 1.8em;
+	font-weight: 700;
+	line-height: 1.1em;
+}
+h3{
+	margin: 0 0 0.5em 0;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+h4{
+	margin: 0 0 .25em 0;
+	font-size: 1.2em;
+	font-weight: 700;
+	color: #cc0000;
+}
+a:link{
+	text-decoration: none;
+}
+
+/*The pages for each module*/
+#moduleMain{
+	width: 80%;
+	margin-left: 10%;
+}
+#moduleMain h2 + hr{
+	border:1px solid #cc0000;
+	margin: 0;
+}
+
+#moduleMain #logo_modulePage img{
+	float: right;
+}
+
+#moduleMain div.tab{
+	margin-top: 18px;
+	width: 25.5%;
+	float: left;
+}
+#moduleMain div.tab button + hr{
+	width: 90%;
+	text-align: center;
+}
+#moduleMain div.tab button{
+	width: 100%;
+	height: 150px;
+	outline: none;
+	border:none;
+	cursor: pointer;
+	text-align: left;
+	font-size: 1.5em;
+	background-color: white;
+}
+#moduleMain div.tab button:hover{
+	color: #cc0000;
+}
+#moduleMain div.tab button.active{
+	color: #cc0000;
+	font-weight: bold;
+}
+#moduleMain div.tab button img{
+	width: 30px;
+	float: right;
+}
+
+#moduleMain div.tabcontent{
+	width: 73.9%;
+	float: right;
+}
+
+#moduleMain div.tabcontent img{
+	float: left;
+	padding: 15px 0px 0px 15px;
+
+}
+#moduleMain div.tabcontent h3{
+	display: block;
+	clear: both;
+}
+#moduleMain div.tabcontent ul, #moduleMain div.tabcontent span{
+	list-style: none;
+	display: inline-block;
+	float: right;
+	padding: 15px 0px 0px 0px;
+	width: 33%;
+	font-weight: bold;
+}
+#moduleMain div.tabcontent p{
+	width: 85%;
+	text-align: justify;
+}
+#moduleMain div.tabcontent h3, #moduleMain div.tabcontent form, #moduleMain div.tabcontent > div, #moduleMain div.tabcontent p{
+	padding-left: 15px; 
+}
+#moduleMain div#quizzes > div{
+	margin-top: 25px;
+}
+#moduleMain div#quizzes div a:link, #moduleMain div#quizzes div a:visited{
+	color: white;
+	background-color: #cc0000;
+	font-weight: bold;
+	padding: 8px 15px 8px 15px;
+	margin-left: 40%;
+}
+#moduleMain div#quizzes div a:visited, #moduleMain div#quizzes div a:active{
+	background-color: #b90404;	
+}
+#moduleMain div#askQuestions form{
+	width: 80%;
+	margin-left: 10%;
+	height: 350px;
+	margin-top: 50px;
+	background-color: rgba(128, 128, 128, 0.09);
+}
+#moduleMain div#askQuestions form label{
+	float: left;
+}
+#moduleMain div#askQuestions form input, #moduleMain div#askQuestions form select{
+	float: right;
+	width: 50%;
+	height: 30px;
+	outline: none;
+	border: 2px solid #cc0000;
+}
+#moduleMain div#askQuestions form input#questionInput{
+	width: 60%;
+	height: 120px;
+}
+#moduleMain div#askQuestions form input[type=submit]{
+	width: 80px;
+	clear: both;
+	margin-top: 15px;
+	color: white;
+	font-weight: bold;
+	background-color: #cc0000;
+	cursor: pointer;
+}
+
+#moduleMain div#askQuestions form input[type=submit]:hover{
+	background-color: #b90404;
+}

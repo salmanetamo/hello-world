@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document for the three quiz pages*/
+
+/*Importing fonts from Google*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
+
+/*Setting default font for the body*/
+body{
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+header{
+	background-color: #cc0000;
+}
+header img{
+	text-align: center;
+	margin-left: 35%;
+}
+
+h2{
+	text-align: center;
+	color: #cc0000;
+	margin:0;
+}
+p{
+	width: 50%;
+	margin-left: 25%;
+}
+
+/*Main body for quiz 2 and quiz 3*/
+.mainQuizz2AndQuizz3{
+	width: 70%;
+	margin-left: 15%;
+}
+.mainQuizz2AndQuizz3 div.tabButtons{
+	text-align: center;
+	border-left: 1px solid #cc0000;
+	border-right: 1px solid #cc0000;
+	border-top: 1px solid #cc0000;
+	padding-top: 10px;
+}
+.mainQuizz2AndQuizz3 div.tabButtons button{
+	width: 16%;
+	height: 40px;
+	cursor: pointer;
+	background-color: #cc0000;
+	outline: none;
+	font-size: 1em;
+	font-weight: bold;
+}
+.mainQuizz2AndQuizz3 div.tabButtons button:hover, .mainQuizz2AndQuizz3 div.tabButtons button.active{
+	color: white;
+	border-bottom: 2px solid white;
+}
+.mainQuizz2AndQuizz3 div.formContent{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
+	border-left: 1px solid #cc0000;
+	border-right: 1px solid #cc0000;
+	border-bottom: 1px solid #cc0000;
+}
+
+.mainQuizz2AndQuizz3 div.formContent form img.feedbackImages{
+	width: 30px;
+}
+
+#quizz2Main div.formContent button.checkButton{/*This is specific to quiz 2*/
+	color: white;
+	outline: none;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #cc0000;
+	border:none;
+	width: 100px;
+	height: 30px;
+	font-size: 1.1em;
+}
+#quizz2Main div.formContent button.checkButton:hover{/*This is specific to quiz 2*/
+	background-color: #b90404;
+}
+button.nextButton{
+	position: fixed;
+	top: 400px;
+	right: 125px;
+	color: #cc0000;
+	outline: none;
+	font-size: 3em;
+	font-weight: bold;
+	cursor: pointer;
+}
+button.previousButton{
+	position: fixed;
+	top: 400px;
+	left: 125px;
+	color: #cc0000;
+	outline: none;
+	font-size: 3em;
+	font-weight: bold;
+	cursor: pointer;
+}
+.mainQuizz2AndQuizz3 div.formContent div.feedback{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.mainQuizz2AndQuizz3 #submitButton{
+	color: white;
+	outline: none;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #cc0000;
+	border:none;
+	width: 150px;
+	height: 30px;
+	font-size: 1.1em;
+}
+
+.mainQuizz2AndQuizz3 #submitButton:hover{
+	background-color: #b90404;
+}
+
+/*The following are specific to different questions in Quiz 3*/
+#quizz3Main #question2 form select{
+	float: right;
+	margin-right: 15%;
+}
+#quizz3Main #question3 form input{
+	float: right;
+	margin-right: 35%;
+	border: 1px solid black;
+}
+
+#quizz3Main #question4{
+	height: 500px;
+}
+
+#quizz3Main #question4 form div#draggableButtons{
+	display: inline-block;
+	float: left;
+	width: 40%;
+}
+
+#quizz3Main #question4 form div#draggableButtons button{
+	height: 28px;
+	margin-bottom: 20px;
+	width: 50%;
+}
+#quizz3Main #question4 form div#placeHolders{
+	display: inline-block;
+	float: right;
+	width: 40%;
+}
+
+#quizz3Main #question4 form div#placeHolders img{
+	float: right;
+}
+
+#quizz3Main #question4 form div#placeHolders span{
+	border: 1px solid black;
+	width: 100%;
+	display: inline-block;
+	height: 35px;
+	margin-bottom: 8px;
+}
+
+#quizz3Main #question6 form label.radioContainer{
+	display: inline-block;
+	width: 45%;
+	margin-top: 15px;
+}
+
+#quizz3Main #question6 form label.radioContainer input{
+	visibility: hidden;
+	position: absolute;
+}
+#quizz3Main #question6 form label.radioContainer > input + img{
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+#quizz3Main #question6 form label.radioContainer > input:checked + img{
+	border: 2px solid #cc0000;
+}
+
+#quizz3Main #question6 form label.radioContainer > img{
+	width: 100%;
+}
+
+/*Main body for quiz 1*/
+
+#quizz1Main form div{
+	display: inline-block;
+	width: 47%;
+	padding-left: 15px;
+}
+#quizz1Main form #div1{
+	float: left;
+	margin-left: 25px;
+	border-right: 2px solid #cc0000;
+}
+#quizz1Main form #div2{
+	float: right;
+}
+#quizz1Main form input[type=submit]{
+	position: relative;
+	display: block;
+	clear: both;
+	width: 80px;
+	height: 30px;
+	outline: none;
+	border:none;
+	cursor: pointer;
+	font-size: 1.2em;
+	background-color: #cc0000;
+	color: white;
+	font-weight: bold;
+	margin-left: 47.5%;
+	top: 15px; 
+}
+#quizz1Main hr{
+	margin: 0;
+	border: 1px solid #cc0000;
+}
+#quizz1Main form hr{
+	clear: both;
+	border: 1px solid #cc0000;
+}
+
+#quizz1Main > div{
+	text-align: center;
+	position: relative;
+	top: 15px;
+	font-weight: bold;
+	font-size: 1.5em;
+}

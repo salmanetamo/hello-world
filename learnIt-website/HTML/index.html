@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+		<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	</head>
+
+	<body>
+	<!-- Banner starts-->
+		<header>
+			<!-- Red bar at the top of the page-->
+			<div id="topBar">
+				<div id="allTopics">
+					<br><br>
+					<button onclick="displayTopics()">All Topics <img src="../images/arrowDown.svg" width="12" id="arrowDown" alt="Arrow facing down"> <img src="../images/arrowUp.svg" width="12" id="arrowUp" alt="Arrow facing up"> </button>
+				</div>
+				<!-- This is the dropdown that shows all the courses and available topics -->
+				<div id="allTopicsContent">
+					<div>
+						<h3><a href="programming.html">Programming</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Intro to Object-Oriented Programming</a></li>
+							<li><a href="#">Writing Java code</a></li>
+							<li><a href="#">Defining classes</a></li>
+							<li><a href="#">Adding methods to classes</a></li>
+							<li><a href="#">Object Interaction</a></li>
+							<li><a href="#">Writing methods-more types, control flow and arrays</a></li>
+							<li><a href="#">Algorithms and method calls</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3><a href="networking.html">Networking</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Explore the network</a></li>
+							<li><a href="#">Configure a Network Operating System</a></li>
+							<li><a href="#">Network Protocols and Communications</a></li>
+							<li><a href="#">Network Access</a></li>
+							<li><a href="#">Ethernet</a></li>
+							<li><a href="#">Network Layer</a></li>
+							<li><a href="#">IP Addressing</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3><a href="soft_eng.html">Software Engineering</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Introduction to Software Engineering</a></li>
+							<li><a href="#">Software Processes</a></li>
+							<li><a href="#">Agile Software Development</a></li>
+							<li><a href="#">Requirements Engineering</a></li>
+							<li><a href="#">System Modelling</a></li>
+							<li><a href="#">Architectural Design</a></li>
+							<li><a href="#">Design and Implementation Processes</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3><a href="maths.html">Maths For Computing</a></h3>
+						<hr>
+						<ul>
+							<li><a href="#">Solving Equations</a></li>
+							<li><a href="#">Indices and Exponentials</a></li>
+							<li><a href="#">Logarithms</a></li>
+							<li><a href="#">Vectors</a></li>
+							<li><a href="#">Matrices</a></li>
+							<li><a href="#">Set Theory</a></li>
+							<li><a href="#">Functions</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="logo">
+					<img src="../images/logo.png" width="300" alt="graspIt: the logo">
+				</div>
+				<div id="searchBar">
+					<br><br>
+					<input type="text" name="searchBar" placeholder="Search">
+					<img src="../images/searchIcon.svg" alt="A search icon">
+				</div>
+			</div>
+	
+			<div id="actualHeader">
+				<h1>LEARN BETTER AND QUICKER</h1>
+				<a href="#homeMain">SEE AVAILABLE COURSES</a>
+			</div>
+			<!--Navigation bar starts here-->
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html" id="active"><img src="../images/homeIcon.svg" width="30" alt="Home icon"> &nbsp;&nbsp;Home</a>
+					</li>
+					<li>
+						<a href="programming.html">Programming</a>
+					</li>
+					<li>
+						<a href="networking.html">Networking</a>
+					</li>
+					<li>
+						<a href="maths.html">Maths For Computing</a>
+					</li>
+					<li>
+						<a href="soft_eng.html">Software Engineering</a>
+					</li>
+				</ul>
+			</nav>
+			<!--Navigation bar ends here-->
+			<hr>
+		</header>
+	<!-- Banner ends-->
+
+	<!-- Main content starts-->
+		<main id="homeMain">
+			<!--This section gives a brief description of each course and allows users to access module pages-->
+			<section id="courses">
+				<div>
+					<div id="programmingPicture"></div>
+					<h3>Programming</h3>
+					<hr>
+					<span>Number of topics: 7<br><br>Description:</span>
+					<p class="courseDescription">
+					This course uses BlueJ, which is a simple and friendly integrated development environment, an IDE, to review some concepts that are core to the Java programming language such as: data types, expressions, decisions, methods, loops, and using the IDE debugging feature...<br><a href="programming.html">[Read more]</a>
+					</p><br>
+					<a href="#" class="startButtons">Start</a>
+				</div>
+				<div>
+					<div id="networkingPicture"><!--The background of this div is a picture used to illustrate the module--></div>
+					<h3>Networking</h3>
+					<hr>
+					<span>Number of topics: 7<br><br>Description:</span>
+					<p class="courseDescription">
+					This module provides an introduction to the basics of data networks operation and configuration. On completion of this module, students should be able to: Carry out basic configurations of common networking devices, Describe the typical operation of standard networks...<br><a href="networking.html">[Read more]</a> 
+					</p><br>
+					<a href="#" class="startButtons">Start</a>
+				</div>
+				<div>
+					<div id="fsePicture"><!--The background of this div is a picture used to illustrate the module--></div>
+					<h3>Software Engineering</h3>
+					<hr>
+					<span>Number of topics: 7<br><br>Description:</span>
+					<p class="courseDescription">
+					This module will provide students with an introduction to the fundamental concepts, processes and practices in software engineering. This includes business analysis, requirements engineering, the software lifecycle and the software development process, software documentation, ...<br><a href="soft_eng.html">[Read more]</a> 
+					</p><br>
+					<a href="#" class="startButtons">Start</a>
+				</div>
+				<div>
+					<div id="mathsPicture"><!--The background of this div is a picture used to illustrate the module--></div>
+					<h3>Maths for Computing</h3>
+					<hr>
+					<span>Number of topics: 7<br><br>Description:</span>
+					<p class="courseDescription">
+					 Throughout this module, you will learn new and useful methods in discrete mathematics which will stand you in good stead during the rest of your studies and your future career. The term discrete mathematics encompasses a collection of topics that form the prerequisite mathematical knowledge ...<br><a href="maths.html">[Read more]</a> </p><br>
+					<a href="#" class="startButtons">Start</a>
+				</div>
+			</section>
+			<hr>
+			<!--This section shows testimonials of students who have used the platform before and quotes what they think or what they have learned-->
+			<section id="testimonials">
+				<h2>Our students say:</h2>
+				<div>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3FWTwn4mn3b0kFhLrQ9LBNcYIW1FNHwLaW1gzbZfLmFTmYvyHSA" alt="One of our students">
+					<blockquote>
+						<p>"
+							<em>
+							If I can now confidently tell you the difference between an expression and a statement, it is certainly thanks to graspIt. There is just something about the quizzes on this platform! I am always able to remember the things I learn here.
+							</em>"
+						</p>
+						<p>
+							<b>Alice, First year student</b>
+						</p>
+					</blockquote>
+				</div>
+			</section>
+		</main>
+	<!-- Main content ends-->
+
+	<!-- Footer starts-->
+		<footer>
+			<div>
+			<!--This div describes the platform-->
+				<div>
+					<h3>About Us:</h3>
+					<p>
+					We are dedicated to make you GRASP all the different topics/concepts in the four courses of your first term. We do this by giving you the chance to practice your understanding of those concepts through interactive quizzes. You can take as many quizzes as you want until it sticks. 
+					</p>
+				</div>
+				<div>
+					<h3>Contacts:</h3>
+					<span>Email: <a href="#">info@graspIt.com</a></span><br>
+					<span>Subscribe here if your want to receive updates :</span><br>
+					<input type="text" name="subscribe">
+					<button>Subscribe</button>
+				</div>
+				<div>
+					<h3>Courses</h3>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="programming.html">Programming</a>
+						</li>
+						<li>
+							<a href="networking.html">Networking</a>
+						</li>
+						<li>
+							<a href="maths.html">Maths For Computing</a>
+						</li>
+						<li>
+							<a href="soft_eng.html">Software Engineering</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="copyright">
+				Copyright &copy; graspIt.com 2017. All rights reserved
+			</div>
+		</footer>
+	<!-- Footer ends-->
+	<script src="../Javascript/script.js"></script>
+	</body>
+
+</html>

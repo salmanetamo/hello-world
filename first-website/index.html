@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="styleOutline.css" rel="stylesheet" type="text/css">
+      <!--The following link tag shows the logo on the hostel along with the page title in the head-->
+      <link rel="icon" type="image/x-icon" href="https://s-media-cache-ak0.pinimg.com/236x/e9/ce/98/e9ce98a063d374f507d3cac3840152d2.jpg">      
+  </head>
+  
+  <body>
+
+    <!--banner start--> 
+    <header id="homeHeader">
+      <input id="searchBar" type="text" name="search" placeholder="Search">  
+      <input id="searchButton" type="image" src="https://www.novitaknits.com/sites/default/files/menuimage/search_icon.png" ><br>
+      <!-- We need to ensure that clicking on the logo takes us back to the homepage-->
+      <a href="index.html"> <img id="logo" src="https://s-media-cache-ak0.pinimg.com/236x/e9/ce/98/e9ce98a063d374f507d3cac3840152d2.jpg"></a>
+      
+      <!--navigation start-->
+      <nav>
+        <div class="navItems" id="logoName">Lilas Hostel</div>
+        <div id="menu">
+        <!--The inline css ensures the active page is highlighted in the navigation bar-->
+          <div class="navItems"><a href="index.html" style="color:#D5E804; background-color: white; border-bottom: 4px solid #D5E804; padding-bottom: 15px;"><b>Home </b></a></div>
+              <div class="navItems"><a href="facilities.html" ><b>Facilities</b></a></div>
+              <div class="navItems"><a href="cafe.html"><b>Cafe</b></a></div>
+              <div class="navItems"><a href="gettingHere.html"><b>Getting Here</b></a></div>
+              <div class="navItems"><a href="contactUs.html"><b>Contact Us</b></a></div>
+        </div>
+      </nav>
+      <!--navigation end--> 
+
+      <h1 id="taglineHome">GET READY FOR THE ADVENTURE</h1> 
+      <h3 id="underTaglineHome">ROOMS / FACILITIES / LOCAL ATTRACTIONS/ ...</h3>
+      <div id="twoButtons">
+        <div id="button1"><a href="#taglineMain">LEARN MORE...</a></div>
+        <div id="button2"><a href="#">BOOK NOW</a></div>
+      </div>
+    </header>
+    <!--banner end--> 
+
+    <hr id="firsthr">
+
+    <!--main content area start-->
+    <main>
+      <!-- The booking bar starts-->
+      <section>
+        <div id="bookingForm">
+          <form>
+            <!--For the dates, I found this on Stackoverflow; it allows me to have the placeholder attribute for an input of type date-->
+            <input placeholder="Check-in date" type="text" onfocus="(this.type='date')"  id="date">
+            <input placeholder="Check-out date" type="text" onfocus="(this.type='date')"  id="date">
+
+            <input type="number" name="" placeholder="Children ">
+
+            <input type="number" name="" placeholder="Adults ">
+
+            <select>
+              <option value="Single room" selected="">Single room</option>
+              <option value="Double room">Double room</option>
+              <option value="Kids room">Kids room</option>
+            </select>
+
+            <input type="email" name="" placeholder="Email">
+            <a href="#" id="buttonBookingBar"> <b>BOOK NOW</b></a>
+          </form>
+        </div>
+      </section>
+      <!-- The booking bar ends-->
+
+      <!--Hostel description starts-->
+      <section>
+        <h1 id="taglineMain">YOUR ADVENTURE STARTS HERE</h1>
+        <div id="descriptionText">
+          Lilas Hostel has one of the best locations in Mauritius. It is located in Grand Baie, the North of the country. Grand Baie is a cosmopolitan town and is itself a local attraction, and it is also a departure point for many cruises towards northern Mauritius. But that's not the coolest thing about Lilas Hostel: From here, you get to the beach in the blink of an eye and you get to see and experience those beautiful Mauritian sunsets you have always heard of. That's not all; the views at night from our skyroom will leave you speechless; they are just beautiful. And, wait for it, you have all of these at the cheapest prices on the entire island.
+        </div>
+      </section>
+      <!--Hostel description ends-->
+
+      <hr>
+      <br>
+
+      <section id="section2">
+      <!--Price table starts-->
+        <div id="column1" class="theColumns"> 
+          <h3>Check our very cheap prices here:</h3>
+          <table id="priceTable">
+              <tr>
+                <td rowspan="3"> <img id="logoForTable" src="https://s-media-cache-ak0.pinimg.com/236x/e9/ce/98/e9ce98a063d374f507d3cac3840152d2.jpg"></td>
+                <td colspan="2" class="priceTableCells" style="color: #4d1877; background-color: #D5E804">Seasons</td>
+              </tr>
+              <tr>
+                <td class="priceTableCells" style="color: #4d1877; background-color: rgba(213, 232, 4, 0.67);">Winter</td>
+                <td class="priceTableCells" style="color: #4d1877; background-color: rgba(213, 232, 4, 0.67);">Summer</td>            
+              </tr>
+                <td class="priceTableCells" style="color: #4d1877; background-color: rgba(213, 232, 4, 0.4);">April to October</td>
+                <td class="priceTableCells" style="color: #4d1877; background-color: rgba(213, 232, 4, 0.4);">November to March</td>
+              <tr>  
+              </tr>
+              <tr>
+                <td class="priceTableCells" style="background-color: rgba(77, 24, 119, 0.74); color: white;">Single room</td>
+                <td class="priceTableCells" style="background-color: rgba(213, 232, 150, 0.3);">15$/per night</td>
+                <td
+                 class="priceTableCells" style="background-color: rgba(213, 232, 150, 0.3);">20$/per night</td>          
+              </tr>
+              <tr>
+                <td class="priceTableCells" style="background-color: rgba(77, 24, 119, 0.74);color: white;">Double room</td>
+                <td class="priceTableCells" style="background-color: rgba(213, 232, 150, 0.3);">25$/per night</td>
+                <td class="priceTableCells" style="background-color: rgba(213, 232, 150, 0.3);">30$/per night</td>             
+              </tr>
+              <tr>
+                <td class="priceTableCells" style="background-color: rgba(77, 24, 119, 0.74); color: white;">Kids room</td>
+                <td class="priceTableCells" style="background-color: rgba(213, 232, 150, 0.3);">12$/per night</td>
+                <td class="priceTableCells" style="background-color: rgba(213, 232, 150, 0.3);">7$/per night</td>              
+              </tr>
+          </table>
+          <p style="float: right;">Click <a href="">here</a> to check additional costs to use our awesome facilities</p>
+        </div> 
+        <!--Price table ends-->
+
+        <div class="theColumns" id="theColumn2" style="margin-left: 50px; display: inline-block;">
+          <h3>Isn't this double bedroom beautiful?</h3>
+          <div id="column2"></div>        
+            <p style="float: left;margin-left: 100px;" id="button3"><a href="#">Book this room &raquo;</a></p>
+        </div>
+
+        <!--Quick links div starts-->
+        <div id="column3" class="theColumns">
+          <h3>Quick links</h3>  
+          <ul style="float: left; ">
+            <li><a href="#localAttractions">Local Attractions in Mauritius</a></li>
+            <li><a href="#websites">Websites for local attractions</a></li>
+            <input id="searchBar2" type="text" name="search" placeholder="Search">  
+              <input id="searchButton2" type="image" src="https://www.novitaknits.com/sites/default/files/menuimage/search_icon.png" >
+          </ul>
+        </div> 
+        <!--Quick links div ends-->  
+      </section>
+      <hr>
+      <!--Local Attractions section starts-->
+      <section>
+            <h2 style="font-size: 30px;" id='localAttractions' name='localAttractions'>Local Attractions</h2>
+            <br>
+
+            <div id="bigContainer">
+              <div class="attractionsFourByFour">
+                <div class="attractions"><h3>Signal Mountain</h3>
+                  <img src="images\SignalMountain.jpg" class="localAttractionsImages" style="height: 195px;">
+                  <p class="attractionsP"><strong>Signal Mountain</strong> is one of the most conspicuous landmarks of Port Louis. At 323 metres / 1,059 feet in height, it gives splendid views over the city of Port Louis and the surrounding area. </p>
+                </div>
+                <div class="attractions"><h3>Fort Adelaide (Citadel)</h3>
+                  <img src="images\FortAdelaide.jpg" class="localAttractionsImages" style="height: 183px;"> 
+                  <p class="attractionsP">Building work on <strong>Fort Adelaide</strong> took ten years to complete and started in 1830. Originally intended as a fortress to protect the British troops from attack by French settlers, by the time it was built, there was little call for its services as a fort. Consequently, it has only really been used as an occasional garrison for troops. </p>
+                </div>
+                <div class="attractions"><h3>Vieux Grand Port</h3>
+                  <img src="images\vieuxGrandPort.jpg" class="localAttractionsImages" style="height: 206px">
+                  <p class="attractionsP">Located in the south-eastern part of Mauritius, just north of Mahebourg, <strong>Vieux Grand Port</strong> marks the spot where Dutch sailors first landed on the island in 1638. A fort was built on the site, named after the Dutch ruler Frederik Hendrik, and the remains of this original building can still be seen. By the 18th century, Grand Port was in the hands of the French, who occupied the site until the 19th century, when it came under British administration</p>
+                </div>
+               
+                <div class="attractions"><h3>Le Morne Brabant</h3>
+                  <img src="images\lemornebrabant.jpg" class="localAttractionsImages" style="height: 162px">
+                  <p class="attractionsP"><strong>Le Morne</strong> is a rugged mountain peninsula that juts out from the south-western tip of Mauritius into the Indian Ocean. It is also a symbol of the fight for freedom made by slaves back in the 18th and 19th centuries. In 2008, the mountain became a World Heritage Site. The peninsula itself gained its name from the rocky crag known as Le Morne Brabant.</p>
+                </div>
+              </div>
+              <br>
+              <div class="attractionsFourByFour secondGroup">
+                <div class="attractions"><h3>Balaclava Ruins</h3>
+                  <img src="images\Balaclava.jpg" class="localAttractionsImages">
+                  <p class="attractionsP">Located at the Baie aux Tortues lie the ruins of a French fort. Built by the island's first French Governor, <strong>Balaclava</strong> served as an arsenal. Remains that can be seen today include parts of the ancient sea wall, as well as an old flour mill and a lime kiln.</p>
+                </div>
+               
+                <div class="attractions"><h3>Chamarel</h3>
+                  <img src="images\Chamarel1.jpg" class="localAttractionsImages" style="height: 110px">
+                  <p class="attractionsP"><strong>Chamarel</strong> is a small village and a major tourist spot located in the south-western of the island. What makes this place unique is the seven coloured layers of sand. It is a unique phenomenon that ttracts people from far and wide. The road to Chamarel is lined with sugarcane and pineapple plantations leading to a valley. </p>
+                </div>
+                <div class="attractions"><h3>Grand Baie</h3>
+                  <img src="images\grandbaie1.jpg" class="localAttractionsImages" style="height: 192px">
+                  <p class="attractionsP"><strong>Grand Baie</strong> is a cosmopolitan town located in Rivière du Rempart District, which lies towards northwest of Mauritius. It is a departure point for many cruises towards northern Mauritius; Gunners' Quoin, Flat Island, Round Island, and Serpent Island.</p>
+                </div>
+                
+                <div class="attractions"><h3>Trou aux Cerfs</h3>
+                  <img src="images\trouAuxCerfs.jpg" class="localAttractionsImages" style="height: 183px">
+                  <p class="attractionsP"><strong>Trou aux Cerfs</strong> is a dormant volcano located in Curepipe. The volcano has a cone and crater and experts believe that the volcano could become active in the coming thousand years.</p>
+                </div>
+              </div>
+            </div>
+      </section>
+      <!--Local Attractions section ends-->
+      <hr> 
+
+      <!--Websites to local lttractions section starts-->
+      <section id="websites" >
+        <h2 style="font-size: 30px;">Websites to Local atttractions</h2>
+        <ol id="websitesList">
+          <li class="websites" id="website1"><a href="http://www.bluepennymuseum.com/en/" target="_blank">Blue Penny Museum</a></li>
+          <li class="websites" id="website2"><a href="http://www.discovermauritiusisland.com/" target="_blank">Discover Mauritius Island</a></li>
+          <li class="websites" id="website3"><a href="http://www.domainedelabourdonnais.com/" target="_blank">Domaine de Labourdonnais</a></li>
+          <li class="websites" id="website4"><a href="https://www.tourism-mauritius.mu/en-ind" target="_blank">Tourism Mauritius</a></li>
+          <li class="websites" id="website5"><a href="https://mauritiusattractions.com/tourist-attractions-in-mauritius-i-38.html" target="_blank">Mauritius Attractions</a></li>
+          <li class="websites" id="website6"><a href="https://www.makemytrip.com/travel-guide/mauritius/places-to-visit.html" target="_blank">Make My Trip</a></li>
+        </ol><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br><p>&nbsp;<br>
+      </section>
+      <!--Websites to local lttractions section starts-->
+    </main>
+    <!--main content area end-->
+
+    <!--footer start-->
+    <footer>
+      <div class="colFooter">
+        <p class="footerHeadings">Newsletter</p>
+        <p>If you want to receive updates and news about the cool offers that we have, please subscribe to our newsletter right here.</p>
+        <input id="subscribeBar" type="text" name="newsletter" placeholder="Your email address">
+        <button type="subscribe" id="subscribeButton">Subscribe</button>
+      </div>
+      <div class="colFooter">
+        <p class="footerHeadings">About</p>
+          <div class="navFooter"><a href="index.html">Home</a></div>
+            <div class="navFooter"><a href="facilities.html" >Facilities</a></div>
+            <div class="navFooter"><a href="cafe.html">Cafe</a></div>
+            <div class="navFooter"><a href="gettingHere.html">Getting Here</a></div>
+            <div class="navFooter"><a href="contactUs.html">Contact Us</a></div>      
+      </div>
+      <div class="colFooter">
+        <p class="footerHeadings">Contacts</p>
+        <p style="padding-left: 30px">Lilas Hostel, Grand Baie, Riviere du Rempart<br>
+        <a href="#">+230 5911 86 73 </a> / <a href="#"> +230 5911 86 73</a><br>
+        <a href="#">info@lilashostel.com</a></p>
+      </div>
+      
+      <div class="colFooter">
+        <p class="footerHeadings">Quick links</p>
+            <div style="padding-left: 50px"><a href="#localAttractions">Local Attractions in Mauritius</a></div>
+            <div style="padding-left: 50px"><a href="#websites">Websites for local attractions</a></div>                
+      </div>
+      
+      <div id="copyright" style="clear: both;">
+        Copyright &copy; 2017 Lilas Hostel. All rights reserved.
+      </div>
+    </footer> 
+    <!--footer end--> 
+
+  </body>
+</html>

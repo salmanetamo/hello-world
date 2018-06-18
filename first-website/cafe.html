@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	    <title>Lilas | Cafe</title>
+	      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	      <link href="styleOutline.css" rel="stylesheet" type="text/css">
+	      <!--The following link tag shows the logo on the hostel along with the page title in the head-->
+	      <link rel="icon" type="image/x-icon" href="https://s-media-cache-ak0.pinimg.com/236x/e9/ce/98/e9ce98a063d374f507d3cac3840152d2.jpg">      
+    </head>
+
+    <body>
+	    <!--banner start-->
+	    <header id="cafeHeader">
+	      <input id="searchBar" type="text" name="search" placeholder="Search">  
+          <input id="searchButton" type="image" src="https://www.novitaknits.com/sites/default/files/menuimage/search_icon.png"><br>
+          <!-- We need to ensure that clicking on the logo takes us back to the homepage-->
+          <a href="index.html"> <img id="logo" src="https://s-media-cache-ak0.pinimg.com/236x/e9/ce/98/e9ce98a063d374f507d3cac3840152d2.jpg"></a>
+
+          <!--navigation start-->
+	      <nav >
+	        <div class="navItems" id="logoName">Lilas Hostel</div>
+	        <div id="menu">
+	        <!--The inline css ensures the active page is highlighted in the navigation bar-->
+	          <div class="navItems"><a href="index.html"><b>Home </b></a></div>
+	              <div class="navItems"><a href="facilities.html"><b>Facilities</b></a></div>
+	              <div class="navItems"><a href="cafe.html" style="color:#D5E804; background-color: white; border-bottom: 4px solid #D5E804; padding-bottom: 15px;"><b>Cafe</b></a></div>
+	              <div class="navItems"><a href="gettingHere.html"><b>Getting Here</b></a></div>
+	              <div class="navItems"><a href="contactUs.html"><b>Contact Us</b></a></div>
+	        </div>
+	      </nav>
+	      <!--navigation end--> 
+
+	      <h1 id="taglineCafe">TIME TO TASTE THE UNTASTED</h1> 
+	      <h3 id="underTaglineCafe">LOCAL CUISINE / EXOTIC DRINKS /...</h3>
+	      <div id="twoButtons">
+	        <div id="button1"><a href="#taglineMain">SEE MORE...</a></div>
+	        <div id="button2"><a href="#">BOOK NOW</a></div>
+	      </div>
+	    </header>   
+	    <!--banner end--> 
+
+	    <hr id="firsthr">
+
+	    <!--main content area start-->
+	    <main>
+	    	<section>
+		        <div id="bookingForm">
+		          <form>
+		            <!--For the dates, I found this on Stackoverflow; it allows me to have the placeholder attribute for an input of type date-->
+		            <input placeholder="Check-in date" type="text" onfocus="(this.type='date')"  id="date">
+		            <input placeholder="Check-out date" type="text" onfocus="(this.type='date')"  id="date">
+
+		            <input type="number" name="" placeholder="Children ">
+
+		            <input type="number" name="" placeholder="Adults ">
+
+		            <select>
+		              <option value="Single room" selected="">Single room</option>
+		              <option value="Double room">Double room</option>
+		              <option value="Kids room">Kids room</option>
+		            </select>
+
+		            <input type="email" name="" placeholder="Email">
+		            <a href="#" id="buttonBookingBar"> <b>BOOK NOW</b></a>
+		          </form>
+		        </div>
+	      	</section>
+		    <section>
+		        <h1 id="taglineMain">LET'S MAKE YOUR STAY SWEETER</h1>
+		        <div id="descriptionText">
+		          Our Cafe is definitely going to add some sweetness to your stay with us at the Lilas Hostel. This is where you get to try the local cuisine, and some of the other exotic foods around the island. You have probably heard of the Mauritian and want to try it, well say no more; we got your back. The Cafe also provides hot and cold drinks which also include some local drinks and flavours. 
+		        </div> 
+		    </section>
+		    <hr>
+		    <section id="foodSection">
+		    	<h2 style="font-size: 30px;" id='localAttractions'>Some local food</h2>
+                <br>
+                <img src="images\food.PNG" style="border: 1px solid rgba(77, 24, 119, 0.9);">
+                <p>In Mauritius, the cuisine is very diverse and is mainly made up of Chinese, or Indian, or Muslim dishes. <br>Here at Lilas Hostel , we give you the chance to try all of the exquisite tastes. </p>
+                <div>
+                	<h3>Chinese food</h3>
+                	<img src="http://kulabaspicerestaurant.com/wp-content/uploads/2017/04/Chicken_Hakka_Noodles.jpg">
+                	<ul>
+                		<li>Bol renversé </li>
+                		<li>Chow mein</li>
+                		<li>Dim sums</li>
+                		<li>Many more...</li>
+                	</ul>
+                </div>
+                <div>
+                	<h3>Indian food</h3>
+                	<img src="http://www.tamtamtours.com/hotels/slider/images/gold-nest/thumbnails/indian_cuisine.jpg">
+                	<ul>
+                		<li>Achard</li>
+                		<li>Madras curries</li>
+                		<li>Curry dishes</li>
+                		<li>Many more...</li>
+                	</ul>
+                </div>
+                <div>
+                	<h3>Muslim food</h3>
+                	<img src="http://www.mysrilankanrecipe.com/wp-content/uploads/2013/09/Chicken-Fried-Rice-180x100.jpg ">
+                	<ul>
+                		<li>Briyani rice</li>
+                		<li>Gulab jamun</li>
+                		<li>Hyderabadi haleem</li>
+                		<li>Many more...</li>
+                	</ul>
+                </div>
+		    </section>
+		    <section id="quickLinksCafe">		    	
+	            <h3>Quick links</h3>  
+	            <ul>
+	              <li><a href="index.html#localAttractions">Local Attractions in Mauritius</a></li>
+	              <li><a href="#websites">Websites for local attractions</a></li>
+	              <li><a href="facilities.html#thefacilitiesSection">Our Facilities</a></li>
+	              <li><a href="#drinksSection">Drinks</a></li>
+	              <input id="searchBar2" type="text" name="search" placeholder="Search">  
+	                <input id="searchButton2" type="image" src="https://www.novitaknits.com/sites/default/files/menuimage/search_icon.png" >
+	            </ul> <br><br><br>
+	            <img src="images\lemornebrabant.jpg" class="localAttractionsImages" style="height: 162px;"> 
+	            <p style="display: inline-block; text-align: justify;padding-left: 8px; ">This is<strong><em> Le Morne Brabant</em></strong>. It is a rugged mountain peninsula that juts out from the south-western tip of Mauritius into the Indian Ocean...<br>
+	            To read more and find out more of these places that you should definitely visit, click <a href="index.html#localAttractions">here</a></p>        
+		    </section>
+		    <br><br><br><br>
+		    <hr>
+		    <br>
+		    <section id="drinksSection">
+		    	<h2 style="font-size: 30px;" id='localAttractions' name='localAttractions'>Our Drinks</h2>
+                <br>
+                <img src="https://media.women.com/images/images/000/080/580/large/wonderhowto.jpg?1490655868" style="border: 1px solid rgba(77, 24, 119, 0.9);">
+                <p>In our menu for drinks, we have both cold and hot drinks. These drinks include soft drinks and most of those we are all familiar with.But we made sure to add some exotic drinks that you only get to try here in Mauritius. </p>
+                <div>
+                	<h3>Cold drinks</h3>
+                	<img src="http://airmauritius1.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/alouda.jpg" width="376" height="224">
+                	<ul>
+                		<li>Soft drinks</li>
+                		<li>Alouda Pillay</li>
+                		<li>Coconut juice</li>
+                		<li>Many more...</li>	
+                	</ul>
+                </div>
+                <div>
+                	<h3>Hot drinks</h3>
+                	<img src="images\tea.png" height="224">
+                	<ul>
+                		<li>Bois Cheri Tea</li>
+                		<li>Coffee</li>
+                		<li>Vanilla tea</li>
+                		<li>Many more...</li>	
+                	</ul>
+                </div>
+		    </section>
+		    <br><br><br>
+	    </main>
+	    <!--main content area end-->
+
+	    <!--footer start-->
+	    <footer>
+	      <div class="colFooter">
+	        <p class="footerHeadings">Newsletter</p>
+	        <p>If you want to receive updates and news about the cool offers that we have, please subscribe to our newsletter right here.</p>
+	        <input id="subscribeBar" type="text" name="newsletter" placeholder="Your email address">
+	        <button type="subscribe" id="subscribeButton">Subscribe</button>
+	      </div>
+	      <div class="colFooter">
+	        <p class="footerHeadings">About</p>
+	          <div class="navFooter"><a href="index.html">Home</a></div>
+	            <div class="navFooter"><a href="facilities.html" >Facilities</a></div>
+	            <div class="navFooter"><a href="cafe.html">Cafe</a></div>
+	            <div class="navFooter"><a href="gettingHere.html">Getting Here</a></div>
+	            <div class="navFooter"><a href="contactUs.html">Contact Us</a></div>      
+	      </div>
+	      <div class="colFooter">
+	        <p class="footerHeadings">Contacts</p>
+	        <p style="padding-left: 30px">Lilas Hostel, Grand Baie, Riviere du Rempart<br>
+	        <a href="#">+230 5911 86 73 </a> / <a href="#"> +230 5911 86 73</a><br>
+	        <a href="#">info@lilashostel.com</a></p>
+	      </div>
+	      
+	      <div class="colFooter">
+	        <p class="footerHeadings">Quick links</p>
+	            <div style="padding-left: 50px"><a href="#localAttractions">Local Attractions in Mauritius</a></div>
+	            <div style="padding-left: 50px"><a href="#websites">Websites for local attractions</a></div>                
+	      </div>
+	      
+	      <div id="copyright">
+	        Copyright &copy; 2017 Lilas Hostel. All rights reserved.
+	      </div>
+	    </footer> 
+	    <!--footer end-->
+
+    </body>
+</html>

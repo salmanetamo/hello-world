@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Lilas | Contact Us</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="styleOutline.css" rel="stylesheet" type="text/css">
+      <!--The following link tag shows the logo on the hostel along with the page title in the head-->
+      <link rel="icon" type="image/x-icon" href="https://s-media-cache-ak0.pinimg.com/236x/e9/ce/98/e9ce98a063d374f507d3cac3840152d2.jpg">      
+  </head>
+
+  <body>
+    <!--banner start-->
+    <header id="contactUsHeader">
+      <input id="searchBar" type="text" name="search" placeholder="Search">  
+      <input id="searchButton" type="image" src="https://www.novitaknits.com/sites/default/files/menuimage/search_icon.png" ><br>
+      <!-- We need to ensure that clicking on the logo takes us back to the homepage-->
+      <a href="index.html"> <img id="logo" src="https://s-media-cache-ak0.pinimg.com/236x/e9/ce/98/e9ce98a063d374f507d3cac3840152d2.jpg"></a>
+      <!--navigation start-->
+      <nav >
+        <div class="navItems" id="logoName">Lilas Hostel</div>
+        <div id="menu">
+        <!--The inline css ensures the active page is highlighted in the navigation bar-->
+          <div class="navItems"><a href="index.html"><b>Home </b></a></div>
+              <div class="navItems"><a href="facilities.html"><b>Facilities</b></a></div>
+              <div class="navItems"><a href="cafe.html"><b>Cafe</b></a></div>
+              <div class="navItems"><a href="gettingHere.html"><b>Getting Here</b></a></div>
+              <div class="navItems"><a href="contactUs.html" style="color:#D5E804; background-color: white; border-bottom: 4px solid #D5E804; padding-bottom: 15px;"><b>Contact Us</b></a></div>
+        </div>
+      </nav>
+      <!--navigation end--> 
+      <h1 id="taglineGettingHere">ALWAYS AT YOUR DISPOSAL</h1> 
+      <div id="twoButtons">
+        <div id="button2"><a href="#">BOOK NOW</a></div>
+      </div>
+    </header>    
+    <!--banner end--> 
+    <hr id="firsthr">
+    <!--main content area start-->
+    <main>
+
+      <!-- The booking bar starts-->
+      <section>
+        <div id="bookingForm">
+          <form>
+            <!--For the dates, I found this on Stackoverflow; it allows me to have the placeholder attribute for an input of type date-->
+            <input placeholder="Check-in date" type="text" onfocus="(this.type='date')"  id="date">
+            <input placeholder="Check-out date" type="text" onfocus="(this.type='date')"  id="date">
+
+            <input type="number" name="" placeholder="Children ">
+
+            <input type="number" name="" placeholder="Adults ">
+
+            <select>
+              <option value="Single room" selected="">Single room</option>
+              <option value="Double room">Double room</option>
+              <option value="Kids room">Kids room</option>
+            </select>
+
+            <input type="email" name="" placeholder="Email">
+            <a href="#" id="buttonBookingBar"> <b>BOOK NOW</b></a>
+          </form>
+        </div>
+      </section>
+      <!-- The booking bar ends-->
+
+      <section>
+        <h1 id="taglineMain">TALK TO US</h1>
+        <div id="descriptionText">
+          We are available 24h/7 to answer any questions or to provide you with any information that you may need. Please, do not hesitate to reach out to us in case you have any concerns or doubts. You can also give us feedback, so we can make future experience even more enjoyable.  
+        </div> 
+      </section>
+      <hr>
+      <!--Contact form starts-->
+      <section style="background-color: rgba(213, 232, 4, 0.2);">
+        <h2 style="font-size: 30px;" id='localAttractions'>Fill the form</h2>
+  		  <div id="FormSection">
+          <p> Fill out the following form and we'll get in touch with you as soon as possible. </p>
+          <br>
+    	    <form id="contactForm" action="processInput.php" method="post">
+
+      	    <label for="first" class="textLabel">Enter your first name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+      	    <input type="text" name="first" id="first" placeholder="Your first name" required class="inputBars"/><br>
+            <br>
+      	    
+      	    <label for="last" class="textLabel">Enter your last name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+      	    <input type="text" name="last" id="last" placeholder="Your last name" required class="inputBars"/><br>
+            <br>
+
+      	    <label for="email" class="textLabel">Enter your email address:&nbsp;&nbsp;</label>
+
+      	    <input type="text" name="email" id="email" placeholder="Your email" required class="inputBars"/><br>
+            <br>
+
+      	    <label for="message" class="textLabel">Enter message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+      	    <input type="text" name="message" id="message" required class="inputBars" placeholder="Talk to us" style="height: 150px;" /><br>
+
+
+      	    <input type="submit" name="submit" id="submit" value="Submit" style="color: white; background-color: #4d1877; margin-left:80%; margin-top: 30px; margin-bottom: 50px; " />
+    	    </form>	
+        </div> 
+      </section> 
+      <!--Contact form ends-->
+    </main>
+    <!--main content area end-->
+
+    <!--footer start-->
+    <footer>
+      <div class="colFooter">
+        <p class="footerHeadings">Newsletter</p>
+        <p>If you want to receive updates and news about the cool offers that we have, please subscribe to our newsletter right here.</p>
+        <input id="subscribeBar" type="text" name="newsletter" placeholder="Your email address">
+        <button type="subscribe" id="subscribeButton">Subscribe</button>
+      </div>
+      <div class="colFooter">
+        <p class="footerHeadings">About</p>
+          <div class="navFooter"><a href="index.html">Home</a></div>
+            <div class="navFooter"><a href="facilities.html" >Facilities</a></div>
+            <div class="navFooter"><a href="cafe.html">Cafe</a></div>
+            <div class="navFooter"><a href="gettingHere.html">Getting Here</a></div>
+            <div class="navFooter"><a href="contactUs.html">Contact Us</a></div>      
+      </div>
+      <div class="colFooter">
+        <p class="footerHeadings">Contacts</p>
+        <p style="padding-left: 30px">Lilas Hostel, Grand Baie, Riviere du Rempart<br>
+        <a href="#">+230 5911 86 73 </a> / <a href="#"> +230 5911 86 73</a><br>
+        <a href="#">info@lilashostel.com</a></p>
+      </div>
+      
+      <div class="colFooter">
+        <p class="footerHeadings">Quick links</p>
+            <div style="padding-left: 50px"><a href="#localAttractions">Local Attractions in Mauritius</a></div>
+            <div style="padding-left: 50px"><a href="#websites">Websites for local attractions</a></div>                
+      </div>
+      
+      <div id="copyright">
+        Copyright &copy; 2017 Lilas Hostel. All rights reserved.
+      </div>
+    </footer> 
+    <!--footer end-->
+  </body>
+</html>

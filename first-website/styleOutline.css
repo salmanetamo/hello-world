@@ -1,0 +1,723 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Styling the CONTACT US page*/
+.inputBars{
+	width: 400px;
+	height: 25px;
+	border-radius: 3px;
+	border: 1px solid #4d1877;
+}
+#contactFform label{
+	float: left;
+}
+#contactUsHeader{
+	background-image: url('http://www.oasishotel.ru/sites/default/files/styles/rooms_img/public/drugie_uslugi_0.jpg?itok=Legn_OMM');
+	height:25%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 450px;		
+	border-bottom: 15px solid transparent;
+}
+#FormSection{
+	width: 50%;
+	margin-left: 25%;
+}
+
+/*Styling the GETTING HERE page*/
+#gettingHereHeader{
+	background-image: url('http://wallup.net/wp-content/uploads/2016/01/257937-nature-landscape-sunrise-dock-sea-island-Mauritius-tropical-walkway-beach.jpg');
+	height:25%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 450px;		
+	border-bottom: 15px solid transparent;
+}
+#taglineGettingHere{
+	text-align: center;
+	font-family: "Lucida",Sans-Serif;
+	color: white;
+	font-size: 45px;
+	margin-top: 80px;
+}
+
+/*Styling the CAFE page*/
+#cafeHeader{
+	background-image: url('http://www.foxesinn.com/graphics/breakfast03.jpg');
+	height:25%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 450px;		
+	border-bottom: 15px solid transparent;
+}
+#taglineCafe{
+	text-align: center;
+	font-family: "Lucida",Sans-Serif;
+	color: white;
+	font-size: 45px;
+	margin-top: 80px;
+	background: rgba(77, 24, 119, 0.4);
+
+}
+#underTaglineCafe{
+	text-align: center;
+	font-family: "Lucida",Sans-Serif;
+	font-size: 18px;
+	color: white;	
+	margin-top: -30px;
+	background-color: rgba(77, 24, 119, 0.4);
+	padding-top: 20px;
+}
+#foodSection{
+	margin-left: 15%;
+	display: inline-block;
+	width: 60%;
+	float: left;
+}
+#foodSection div{
+	border: 2px solid rgba(77, 24, 119, 0.9);
+	display: inline-block;
+	width: 225px;
+}
+#foodSection div img{
+	padding-left: 25px;
+}
+#quickLinksCafe{
+	display: inline-block; 
+	border:1px solid rgba(77, 24, 119, 0.9);
+	padding-right: 20px;
+	width: 20%;
+	margin-top: 100px;
+	padding-bottom: 10px;
+}
+#drinksSection{
+	margin-left: 15%;
+	display: inline-block;
+	width: 65%;
+}
+#drinksSection div{
+	border: 2px solid rgba(77, 24, 119, 0.9);
+	display: inline-block;
+	margin-right: 25px;
+}
+
+/*Styling the FACILITIES page*/
+
+#facilitiesHeader{
+	background-image: url("http://www.pagoda.com.au/data/deposit/galleryImage.7583.image/image.jpg");
+	height:25%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 450px;		
+	border-bottom: 15px solid transparent;
+}
+#taglineFacilities{
+	text-align: center;
+	font-family: "Lucida",Sans-Serif;
+	color: white;
+	font-size: 45px;
+	margin-top: 80px;
+	background-color: rgba(77, 24, 119, 0.25);
+}
+#underTaglineFacilities{
+	text-align: center;
+	font-family: "Lucida",Sans-Serif;
+	font-size: 18px;
+	color: white;	
+	margin-top: -30px;
+	background-color: rgba(77, 24, 119, 0.25);
+	padding-top: 20px;
+}
+#thefacilitiesSection{
+	background-color: rgba(77, 24, 119, 0.1);	
+	height: 600px;
+}
+.facilities {
+	position: relative;   
+	height: 500px; 
+	clear: right;
+	margin-top: 50px;
+	width: 80%;
+	left: 10%;
+}
+.facility {
+	float: left;
+}
+.facility label {
+	background-color: rgba(213, 232, 4, 0.2);
+	padding-top: 15px;
+	padding-top: 20px;
+	border: 1px solid #D5E804; 
+	border-top: 0.5px solid #D5E804;
+	padding-bottom: 20px;
+	display: inline-block;
+	line-height: 35px;
+}
+.facility [type=radio] {
+	display: none;   
+
+}
+.facilityDescription {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	background: white;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+	border: 1px solid #ccc; 
+	border-top: 2px solid #4d1877;
+}
+.facilityDescription img{
+	display: inline-block;
+	float: left;
+}
+.facilityDescription p{
+	text-align: justify;
+	height: 275px;
+	display: inline-block;
+	margin-left: 7.5%;
+}
+
+.facilityDescription span{
+	color:#4d1877;
+	font-weight: bold;
+}
+[type=radio]:checked ~ label {
+	background: #4d1877;
+	z-index: 2;
+	color: white;
+}
+[type=radio]:checked ~ label ~ .facilityDescription {
+	z-index: 1;
+}
+.facilityIcon{
+	height: 30px;
+	width: 30px;
+	float: left;
+}
+#additionalSectionFacilities{
+	background-color: rgba(213, 232, 4, 0.2);
+}
+#containerDivAdditional{
+	width: 90%; 
+	margin-left: 5%;
+}
+#ShowcaseDiv{
+	display: inline-block; 
+	width: 64%; 
+	float: left;
+}
+#ShowcasePic1{
+	float: left; 
+	border:1px solid #4d1877;
+} 
+#ShowcasePic2{
+	border:0.5px solid #4d1877;
+}
+#ShowcasePic3{
+	margin-top: -6px; 
+	border:0.5px solid #4d1877;
+}
+#testimonialsDiv{
+	display: inline-block; 
+	width: 30%; 
+	border:2px solid #4d1877; 
+	margin-left: 3%; 
+	padding-left: 15px; 
+	background-color: rgba(77, 24, 119, 0.1);
+}
+.testimonialsPics{
+	border-radius: 50%; 
+	float: left; 
+	border:1px solid #4d1877;
+}
+.testimonialsNames{
+	clear: right; 
+	display: inline-block; 
+	margin-top: 80px;
+	font-weight: bold;
+}
+.testimonialsP{
+	margin-top: 100px; 
+	display: inline-block; 
+	margin-top: 0px
+}
+
+/*Styling the HOME page*/
+#homeHeader{
+	background-image: url("https://www.kenwoodtravel.co.uk/blog/wp-content/uploads/ThinkstockPhotos-452244201-e1484062667953.jpg");
+	height:25%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 700px;		
+	border-bottom: 15px solid transparent;
+}
+
+#searchBar{
+	margin-left: 73.5%; 
+	height: 35px; 
+	width: 200px;  
+	border: 2px solid #D5E804; 
+	background-color: rgba(194, 194, 194, 0.19);
+	margin-top: 100px;
+}
+#searchButton{
+	background-color: #D5E804; 
+	padding: 13px;
+	height: 15px;
+	width: 15px;
+	margin-bottom: -15px; 
+	margin-top: 100px;
+}
+
+#logo{
+	height: 62px;
+	width:62px;
+	display: inline;
+	margin-top: 20px;
+	float: left;
+	border: 1px solid #D5E804;
+	margin-left: 7%;
+}
+#logoName{
+	float: left; 
+	margin-left: 5px; 
+	font-family: 'AR DECODE'; 
+	font-size: 45px; 
+	color: #4d1877; 
+	font-weight: bold;
+}
+nav{
+	width: 80%;
+	background-color: white;
+	font-size: 20px;
+	margin-top: 20px;	
+	height: 60px;
+	display: inline-block;
+	margin-left: 0px;
+	border-top: 4px solid #D5E804;
+	border-right: 4px solid #D5E804; 
+}
+
+#menu{
+	float: right;
+	padding-right: 50px;
+}
+
+.navItems{
+	display: inline-block;
+	line-height: 60px;
+	margin-left: 50px;
+}
+
+.navItems a:link, .navItems a:visited {
+	text-decoration: none;
+	color: #4d1877;	
+}
+
+.navItems a:hover, .navItems a:active{
+	color:#D5E804;
+	background-color: white;
+	border-bottom: 4px solid #D5E804;
+	padding-bottom: 15px; 
+}
+body{
+	margin: 0px;	
+	font-family: sans-serif;
+
+}
+
+#taglineHome{
+	text-align: center;
+	font-family: "Lucida",Sans-Serif;
+	color: white;
+	font-size: 60px;
+	margin-top: 200px;
+}
+#underTaglineHome{
+	text-align: center;
+	font-family: "Lucida",Sans-Serif;
+	font-size: 20px;
+	color: white;	
+	margin-top: -20px;
+}
+
+#twoButtons{
+	display: block;
+	text-align: center;
+}
+
+#button1{
+	display: inline-block;
+	text-align: center;
+}
+#button2{
+	display: inline-block;
+}
+
+#button1 a:link, #button1 a:visited {
+	text-decoration: none;
+	color: white;	
+	width: 200px;
+	border: 2px solid #D5E804;
+	padding: 9px;
+	border-radius: 5px;
+	background-color: #D5E804;
+	font-weight: bold;
+	font-family: "Lucida",Sans-Serif;
+}
+
+#button1 a:hover, #button1 a:active{
+	color:#4d1877;
+	background-color: white;
+	border: 2px white;
+	font-family: "Lucida",Sans-Serif;
+}
+
+#button2 a:link, #button2 a:visited {
+	text-decoration: none;
+	color: white;	
+	border: 2px solid #D5E804;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 9px;
+	padding-top: 9px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-family: "Lucida",Sans-Serif;
+}
+
+#button2 a:hover, #button2 a:active{
+	color:#4d1877;
+	background-color: white;
+	border: 2px white;
+	font-family: "Lucida",Sans-Serif;
+}
+
+#firsthr{
+	width: 5%;
+	text-align: center;
+	border: 3px solid #D5E804;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+
+#bookingForm {
+	border: 1px solid black;
+	width: 98%;
+	margin-left: 1%;
+	height: 70px;
+	box-shadow: 0px 1px 15px 3px #4d1877;
+	background-color: #4d1877;
+	position: fixed;
+	top:1px;
+}
+
+#bookingForm input, #bookingForm select, #bookingForm a{
+	width: 12%;
+	height: 25px;
+	margin-top: 20px;
+	margin-left: 5px;
+	border-radius: 3px;
+}
+#bookingForm select, #bookingForm a{
+	height: 31px;
+}
+#bookingForm a:link, #bookingForm a:visited{
+	border: 1px solid black;
+	text-decoration: none;
+	border-radius: 0px;
+	padding: 25px 10px 26px 14px; 
+	background-color: #D5E804;
+	margin-left: 100px;
+	color: white;
+}
+#bookingForm a:hover, #bookingForm a:active{
+	background-color: #4d1877;
+	border: 2px solid #D5E804;
+}
+#taglineMain{
+	font-size: 35px;
+	color:#4d1877;
+	text-align: center;
+}
+#descriptionText{
+	width: 50%;
+	text-align: justify;
+	margin-left: 25%;
+}
+#priceTable{
+
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.priceTableCells{
+	border: 1px solid white;
+	font-size: 20px;
+} 
+#section2{
+	display: block;
+	text-align: center;
+	background-color: rgba(213, 232, 4, 0.2);  
+}
+#theColumn2 {
+		display: inline-block;
+
+	}
+.theColumns{
+	width: 30%;
+	display: inline-block;
+	height: 350px;
+}	
+
+#column2{
+	background-image: url('https://q.bstatic.com/images/hotel/max1024x768/376/37689870.jpg');
+	background-size: 355px 200px;
+	width: 355px;
+	height: 200px;
+	background-repeat: no-repeat;
+}
+#column3{
+	border: 1px solid grey;
+	width: 250px;	
+	margin-left: 50px;
+}
+#logoForTable{
+	height: 102px;
+	width:102px;
+}
+
+#button3 a:link, #button3 a:visited {
+	text-decoration: none;
+	color: white;	
+	border: 2px solid #4d1877;
+	background-color: #4d1877;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 9px;
+	padding-top: 9px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-family: "Lucida",Sans-Serif;
+}
+
+#button3 a:hover, #button3 a:active{
+	color:#D5E804;
+	border: 2px white;
+	font-family: "Lucida",Sans-Serif;
+}
+
+#searchBar2{
+	height: 35px; 
+	width: 180px;  
+	border: 2px solid #4d1877; 
+	background-color: rgba(213, 232, 4, 0.1);
+	margin-left: -30px;
+	margin-top: 100px;
+}
+#searchButton2{
+	background-color: #4d1877; 
+	padding: 13px;
+	height: 15px;
+	width: 15px;
+	margin-bottom: -15px; 
+	margin-top: 30px;
+	margin-top: 100px;
+}
+hr{
+	width: 10%;
+	text-align: center;
+	border: 2px solid #D5E804;
+	border-radius: 5px;
+	margin-top: 50px;
+}
+
+.localAttractionsImages{
+	width: 275px; 
+	float: left;
+	margin-left: 10px;
+}
+
+.attractionsFourByFour{
+	display: block;
+	text-align: center;
+}
+.attractions{
+	width: 22%;
+	display: inline-block;
+	border: 1.5px solid #4d1877;
+	height: 550px;
+	background-color: rgba(213, 232, 4, 0.2);  
+}
+.attractionsP{
+	text-align: justify;
+	padding: 10px;
+	float: left;
+}
+
+h2, h3{
+	color: #4d1877; 
+	text-align: center; 
+}
+#websites{
+	clear: both;
+}
+#websitesList{
+	text-align: center;
+	margin-left: 80px;
+}
+.websites{
+	float: left;
+	border: 2px solid #4d1877;
+	width: 300px;
+	margin-left: 50px;
+	margin-bottom: 25px;
+	max-height: 175px;
+	text-align: center;
+	padding-top: 87.5px;
+	padding-bottom: 87.5px;
+}
+.websites a:link, #websites a:visited{
+	text-decoration: none;
+	border: 2px solid #4d1877; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	background-color: rgb(237, 243, 150);
+}
+.websites a:hover, #websites a:active{
+	text-decoration: none;
+	width: 300px; 
+	max-height: 175px;
+	text-align: center;
+	padding-top: 87.5px;
+	padding-bottom: 87.5px; 
+	border: 8px rgb(237, 243, 150);
+	background-color: rgb(237, 243, 150);
+	border-radius: 0px;
+}
+#website1{
+	background-image: url('images/websistes/website1.PNG');
+}
+#website1 a:link, #website1 a:visited{
+	padding-left: 53px;
+	padding-right: 53px;			
+}
+#website1 a:hover, #website1 a:active{
+	padding-left: 76px;
+	padding-right: 76px;	
+}
+
+#website2 a:link, #website2 a:visited{
+	padding-left: 37.655px;
+	padding-right: 37.655px;
+	
+}
+#website2 a:hover, #website2 a:active{
+	padding-left: 60px;
+	padding-right: 60px;
+}
+#website2{
+	background-image: url('images/websistes/website2.PNG');	
+}
+
+#website3 a:link, #website3 a:visited{
+	padding-left: 28px;
+	padding-right: 28px;
+}
+#website3 a:hover, #website3 a:active{
+	padding-left: 51.71px;
+	padding-right: 51.71px;
+}
+#website3{
+	background-image: url('images/websistes/website3.PNG');	
+}
+
+#website4 a:link, #website4 a:visited{
+	padding-left: 63px;
+	padding-right: 63px;
+}
+#website4 a:hover, #website4 a:active{
+	padding-left: 86px;
+	padding-right: 86px;
+}
+#website4{
+	background-image: url('images/websistes/website4.PNG');	
+}
+
+#website5 a:link, #website5 a:visited{
+	padding-left: 54px;
+	padding-right: 54px;
+	
+}
+#website5 a:hover, #website5 a:active{
+	padding-left: 77.5px;
+	padding-right: 77.5px;
+}
+#website5{
+background-image: url('images/websistes/website5.PNG');	
+}
+
+#website6 a:link, #website6 a:visited{
+	padding-left: 78px;
+	padding-right: 78px;
+}
+#website6 a:hover, #website6 a:active{
+	padding-left: 101.5px;
+	padding-right: 101.5px;
+}
+#website6{ 
+background-image: url('images/websistes/website6.PNG');	
+} 
+footer{
+	display: block;
+	background-color: #4d1877;
+}
+.footerHeadings{
+	color: white; 
+	text-align: center; 
+	font-size: 20px;
+}
+.colFooter{
+	display: inline-block;
+	width: 23%;
+	height: 200px;
+	float: left;
+	padding-left: 10px;
+	margin-left: 10px;
+	color: white;
+}
+#copyright{
+	text-align: center;
+	display: block;
+	border: 1px solid white;
+	padding-top: 10px;
+	color: white; 
+	font-size: 12px;
+}
+.navFooter{
+	padding-left: 120px
+}
+
+footer a:link, footer a:visited{
+	text-decoration: none;
+	color: #D5E854;
+}
+footer a:hover, footer a:active{
+	color: white;
+} 
+#subscribeBar{
+	height: 25px;
+	border: 2px solid #D5E804;
+}
+#subscribeButton{
+	height: 30px;
+	background-color: #D5E804;
+}		

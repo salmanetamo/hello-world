@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Facilities</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link href="styleOutline.css" rel="stylesheet" type="text/css">
+      <!--The following link tag shows the logo on the hostel along with the page title in the head-->
+      <link rel="icon" type="image/x-icon" href="https://s-media-cache-ak0.pinimg.com/236x/e9/ce/98/e9ce98a063d374f507d3cac3840152d2.jpg">      
+  </head>
+
+  <body>
+    <!--banner start-->
+    <header id="facilitiesHeader">
+      <input id="searchBar" type="text" name="search" placeholder="Search">  
+      <input id="searchButton" type="image" src="https://www.novitaknits.com/sites/default/files/menuimage/search_icon.png" ><br>
+      <!-- We need to ensure that clicking on the logo takes us back to the homepage-->
+      <a href="index.html"> <img id="logo" src="https://s-media-cache-ak0.pinimg.com/236x/e9/ce/98/e9ce98a063d374f507d3cac3840152d2.jpg"></a>
+
+      <!--navigation start-->
+      <nav >
+        <div class="navItems" id="logoName">Lilas Hostel</div>
+        <div id="menu">
+        <!--The inline css ensures the active page is highlighted in the navigation bar-->
+          <div class="navItems"><a href="index.html"><b>Home </b></a></div>
+              <div class="navItems"><a href="facilities.html" style="color:#D5E804; background-color: white; border-bottom: 4px solid #D5E804; padding-bottom: 15px;"><b>Facilities</b></a></div>
+              <div class="navItems"><a href="cafe.html"><b>Cafe</b></a></div>
+              <div class="navItems"><a href="gettingHere.html"><b>Getting Here</b></a></div>
+              <div class="navItems"><a href="contactUs.html"><b>Contact Us</b></a></div>
+        </div>
+      </nav>
+      <!--navigation end--> 
+
+      <h1 id="taglineFacilities">COOL FACILITIES JUST FOR YOU</h1> 
+      <h3 id="underTaglineFacilities">BAR / PICK-UP / SWIMMING POOL/ ...</h3>
+      <div id="twoButtons">
+        <div id="button1"><a href="#taglineMain">SEE MORE...</a></div>
+        <div id="button2"><a href="#">BOOK NOW</a></div>
+      </div>
+    </header>    
+    <!--banner end--> 
+
+    <hr id="firsthr">
+
+    <!--main content area start-->
+    <main>
+      <section>
+        <div id="bookingForm">
+          <form>
+            <!--For the dates, I found this on Stackoverflow; it allows me to have the placeholder attribute for an input of type date-->
+            <input placeholder="Check-in date" type="text" onfocus="(this.type='date')"  id="date">
+            <input placeholder="Check-out date" type="text" onfocus="(this.type='date')"  id="date">
+
+            <input type="number" name="" placeholder="Children ">
+
+            <input type="number" name="" placeholder="Adults ">
+
+            <select>
+              <option value="Single room" selected="">Single room</option>
+              <option value="Double room">Double room</option>
+              <option value="Kids room">Kids room</option>
+            </select>
+
+            <input type="email" name="" placeholder="Email">
+            <a href="#" id="buttonBookingBar"> <b>BOOK NOW</b></a>
+          </form>
+        </div>
+      </section>
+      <section>
+        <h1 id="taglineMain">IT'S ALL PART OF THE ADVENTURE</h1>
+        <div id="descriptionText">
+          At the Lilas Hostel, our first priority is the comfort of our clients. Well, we guarantee that comfort by providing a set of facilities that will allow you to relax as you explore the beautiful island. When we say relax, we mean relaaax.
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h2 style="font-size: 30px";>Lilas Facilities</h2>
+        <div id="thefacilitiesSection">
+          <div class="facilities">
+              <!--The radio-buttons were used to create the tabs menu for different facility. Each radio button clicked takes us to a different facility-->
+            <div class="facility">
+                <input type="radio" id="facility1" name="theFacilities" checked>
+                <label for="facility1" style="margin-left: 220px; padding-right: 10px;"><img src="http://www.freeiconspng.com/uploads/swim-icon--5.png" class="facilityIcon">&nbsp;Swimming pool</label>
+                 
+                <div class="facilityDescription">
+                  <img src="images\img2.jpg" height="350" width="622">
+                  <h3>SWIMMING POOL</h3>
+                  <p style="width: 30%;">Mauritius is a tropical island, and it can get pretty hot sometimes. And one thing we can tell you is that after you visit some of the beautiful places that are here, you would probably want to cool yourself down and re-energize your body. Well, we got your back with this swimming pool that is at your disposal anytime. It is well taken care of, and we always make sure we follow all the necessary hygiene policies.<br><br><br><br><span>Service Hours: 8AM to 7PM<br>Service Charge: 10$</span></p>
+                </div> 
+            </div>
+              
+            <div class="facility">
+                <input type="radio" id="facility2" name="theFacilities">
+                <label for="facility2" style="padding-right: 80px;"><img src="https://image.flaticon.com/icons/png/512/53/53779.png" class="facilityIcon">&nbsp;Spa</label>
+                 
+                <div class="facilityDescription">
+                  <img src="http://themakeoverz.com/images/gallery/gallery1481360327_233.jpg" height="350" width="525">
+                  <h3>SPA</h3>
+                  <p style="width: 40%;">Are you back from hiking Le Pouce Mountain? Or maybe you are just back from your errands around the island and you are feeling very tired. Well, there is nothing better than taking a moment for yourself and get some soothing massage to reinvigorate your body. Our spa is there just for that to make sure you are always relaxed and ensuring your comfort is at its optimum.<br><br><br><br><br><br><br><span>Service Hours: 9AM to 12AM<br>Service Charge: 12$</span></p>
+                </div> 
+            </div>
+              
+            <div class="facility">
+                 <input type="radio" id="facility3" name="theFacilities">
+                 <label for="facility3" style="padding-right: 80px;"><img src="https://cdn2.iconfinder.com/data/icons/inverticons-stroke-vol-2/32/glass_transparency_transparent_drink_wine_tasting_party_event_alcohol-512.png" class="facilityIcon">&nbsp;Bar</label>
+               
+                <div class="facilityDescription">
+                  <img src="http://www.thephuketnews.com/photo/listing/1364530510_1.jpg" height="350" width="685">
+                  <h3>BAR</h3>
+                  <p style="width: 25%;">You can't imagine a hostel without a bar, neither can we. That's why we have this bar at your disposal to make sure you never run out of your favorite drinks. The Bar is also a place for you to meet the people you are sharing the hostel with and also meet some Mauritians. After all, some of the best relationships are built after a drink or two with a complete stranger.<br><br><br><span>Service Hours: 6PM to 12AM<br>Service Charge: On order</span></p>
+                </div> 
+            </div>
+
+            <div class="facility">
+                <input type="radio" id="facility4" name="theFacilities">
+                <label for="facility4" style="padding-right: 80px;"><img src="http://www.freeiconspng.com/uploads/fitness-icon-png-exercise-fitness-gym-1.png" class="facilityIcon">&nbsp;Gym</label>
+               
+                <div class="facilityDescription">
+                  <img src="http://www.youthworkhacks.com/wp-content/uploads/2016/11/gym.jpg" height="350" width="524">
+                  <h3>GYM</h3>
+                  <p style="width: 40%;">You are a sporty person, and you want to make sure you do not disrupt your work out program. Well, don't worry; we got your back with the necessary equipment to keep your training going. So, you can hit the gym as much as you want, it's all there waiting for you.<br><br><br><br><br><br><br><br><br><span>Service Hours: 4PM to 7PM<br>Service Charge: 8$</span></p> 
+                </div> 
+            </div>
+
+            <div class="facility">
+                <input type="radio" id="facility5" name="theFacilities">
+                <label for="facility5" style="padding-right: 65px;"><img src="https://images.vexels.com/media/users/3/130479/isolated/preview/46ba0811d3869348179672547434404f-front-retro-taxi-icon-by-vexels.png" class="facilityIcon">&nbsp;Pick-up</label>
+               
+                <div class="facilityDescription">
+                  <img src="http://www.allbusinessideas.net/wp-content/gallery/car-hire-services-vs-company-cars-which-ones-are-the-most-affordable-when-travelling-pictures/Car-hire-services-vs-company-cars-Which-ones-are.jpg" height="350" width="525">
+                  <h3>PICK-UP</h3>
+                  <p style="width: 40%;">You are new to the country, and you want to make sure you have transport at your disposal at reasonable prices. Moving around the island can be challenge if you don't know your way around it. So, you can rent our rent cars to take you to or pick you from wherever you are on the island. And you have all of that at fairly cheap prices.<br><br><br><br><br><br><br><br><span>Service Hours: 24h/7<br>Service Charge: On order</span></p>
+                </div> 
+            </div>   
+          </div>
+        </div> 
+      </section>
+      <hr>
+      <section id="additionalSectionFacilities">
+        <div id="containerDivAdditional">
+          <div id="ShowcaseDiv">
+            <h3>Hostel Showcase</h3>
+            <img id="ShowcasePic1" src="images\img1.jpg" height="384" width="512">
+            <img id="ShowcasePic2" src="images\img5.jpg" height="192" width="256">
+            <img id="ShowcasePic3" src="images\img4.jpg" height="192" width="256">
+          </div>
+          <div id="testimonialsDiv">
+            <h3>Our customers say</h3>
+            <div>
+              <img class="testimonialsPics" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_h3z_VCcsIBq94z8SAtul0yI7NtKbGvOUsfkOAfdSIwBYdmKKdw" width="100" height="100">
+              <p class="testimonialsNames">Jean-Michel De La Gruyere</p>
+              <p class="testimonialsP">"I have only been here for four days, but I feel like staying forever. I was treated like a king although I was a simple student in visit."</p>
+            </div>
+            <br><br>
+            <div>
+              <img class="testimonialsPics" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrO90pWtKbU7LWDM9Y0ShXpy6lg3kdY2jxNGoc6M0HpLkKAuZM" width="100" height="100">
+              <p class="testimonialsNames">Mansha Vanduptani</p>
+              <p class="testimonialsP">"I would definitely come back here for my next holidays. And the spa is just mwah!"</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--main content area end-->
+
+    <br><br>
+
+    <!--footer start-->
+    <footer>
+      <div class="colFooter" style="clear: left;">
+        <p class="footerHeadings">Newsletter</p>
+        <p>If you want to receive updates and news about the cool offers that we have, please subscribe to our newsletter right here.</p>
+        <input id="subscribeBar" type="text" name="newsletter" placeholder="Your email address">
+        <button type="subscribe" id="subscribeButton">Subscribe</button>
+      </div>
+      <div class="colFooter">
+        <p class="footerHeadings">About</p>
+          <div class="navFooter"><a href="index.html">Home</a></div>
+            <div class="navFooter"><a href="facilities.html" >Facilities</a></div>
+            <div class="navFooter"><a href="cafe.html">Cafe</a></div>
+            <div class="navFooter"><a href="gettingHere.html">Getting Here</a></div>
+            <div class="navFooter"><a href="contactUs.html">Contact Us</a></div>      
+      </div>
+      <div class="colFooter">
+        <p class="footerHeadings">Contacts</p>
+        <p style="padding-left: 30px">Lilas Hostel, Grand Baie, Riviere du Rempart<br>
+        <a href="#">+230 5911 86 73 </a> / <a href="#"> +230 5911 86 73</a><br>
+        <a href="#">info@lilashostel.com</a></p>
+      </div>
+      
+      <div class="colFooter">
+        <p class="footerHeadings">Quick links</p>
+            <div style="padding-left: 50px"><a href="#localAttractions">Local Attractions in Mauritius</a></div>
+            <div style="padding-left: 50px"><a href="#websites">Websites for local attractions</a></div>                
+      </div>
+      
+      <div id="copyright">
+        Copyright &copy; 2017 Lilas Hostel. All rights reserved.
+      </div>
+    </footer> 
+    <!--footer end-->
+
+  </body>
+</html>
